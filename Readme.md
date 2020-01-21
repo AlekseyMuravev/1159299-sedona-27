@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей Муравьёв](https://up.htmlacademy.ru/htmlcss/27/user/1159299).
-* Наставник: [Сергей Остаповец](httpshtmlacademy.ruprofileseraphim).
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
