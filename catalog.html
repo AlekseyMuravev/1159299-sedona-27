@@ -7,7 +7,9 @@
   <body>
     <header class="header">
       <a href="index.html">
-        <img src="img/logo-sedona.svg" alt="логотип Sedona">
+        <div class="logo-sedona">
+          <img src="img/logo-sedona.svg" alt="Sedona">
+        </div>
       </a>
       <nav>
         <ul class="navigation">
@@ -30,36 +32,90 @@
       <div class="sedona-filter">
         <img src="img/filter-sedona.jpg" alt="Sedona" width="1200" height="562">
       </div>
-      <!-- тут будет форма -->
+      <div class="hotels-sorting">
+        <form action="#" method="GET">
+          <fieldset>
+            <div class="infrastructure">
+              <p>Инфраструктура:<p>
+              <label>
+                <input type="checkbox" name="pool" checked>
+              Бассейн</label><br>
+              <label>
+                <input type="checkbox" name="parking">
+              Парковка</label><br>
+              <label>
+                <input type="checkbox" name="wi-fi">
+              Wi-Fi</label>
+            </div>
+            <div class="type-home">
+              <p>Тип жилья:</p>
+              <label>
+                <input type="checkbox" name="hotel" checked>
+              Гостиница</label><br>
+              <label>
+                <input type="checkbox" name="motel" checked>
+              Мотель</label><br>
+              <label>
+                <input type="checkbox" name="apartments" checked>
+              Апартаменты</label>
+            </div>
+            <div class="price-day">
+              <p>Стоимость в сутки(Р):</p>
+              <div class="price-number">
+                <p>От 0</p>
+                <p>До 3000</p>
+              </div>
+              <input type="range" min="0" max="3000">
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="sorting">
+        <p>Сортировка</p>
+        <button type="button">По цене</button>
+        <button type="button">По типу</button>
+        <button type="button">По рейтингу</button>
+        <button type="button" aria-label="По убыванию"></button>
+        <button type="button" aria-label="По возрастанию"></button>
+      </div>
       <ul class="hotels">
         <li>
-          <h2>Amara resot & spa</h2>
           <div class="hotel-amara">
             <img src="img/Layer-21.jpg" alt="Amara resot & spa" width="135" height="90">
           </div>
+          <div class="hotel-amara-text">
+            <h2>Amara resot & spa</h2>
           <p>Гостиница <span class="price"> От 4000 р.</span></p>
           <a href="#" class="hotel-details">Подробнее</a>
           <a href="#" class="hotel-reservation">Забронировать</a>
+          </div>
+          <div class="star"></div>          
           <p>Рейтинг: 8,5</p>
         </li>
         <li>
-          <h2>Desert quail inn</h2>
           <div class="hotel-desert">
             <img src="img/Layer-89.jpg" alt="Desert quail inn" width="135" height="90">
           </div>
+          <div class="hotel-desert-text">
+          <h2>Desert quail inn</h2>
           <p>Мотель <span class="price">От 3000 р.</span></p>
           <a href="#" class="hotel-details">Подробнее</a>
           <a href="#" class="hotel-reservation">Забронировать</a>
+          </div>
+          <div class="star"></div>
           <p>Рейтинг: 8,9</p>
         </li>
         <li>
-          <h2>Villas at poco diablo</h2>
           <div class="hotel-villas">
             <img src="img/Layer-22.jpg" alt="Villas at poco diablo" width="135" height="90">
           </div>
+          <div class="hotel-villas-text">
+          <h2>Villas at poco diablo</h2>
           <p>Апартаменты <span class="price"> От 2000 р.</span></p>
           <a href="#" class="hotel-details">Подробнее</a>
           <a href="#" class="hotel-reservation">Забронировать</a>
+          </div>
+          <div class="star"></div>
           <p>Рейтинг: 9,2</p>
         </li>
       </ul>
@@ -67,25 +123,25 @@
     <footer>
       <div class="contacts">
         <a href="#">#visitsedona</a>
-        Тел: <a href="tel:+7(945)666-02-66">+7(945)666-02-66</a>
+        <p>Тел: <a href="tel:+7(945)666-02-66">+7(945)666-02-66</a></p>
       </div>
       <div class="socials">
         <ul>
           <li>
-            <a href="https://twitter.com/" class="tw">ссылк на твитер</a>
+            <a href="https://twitter.com/" class="tw" aria-label="Наш твитер"></a>
           </li>
           <li>
-            <a href="https://www.facebook.com/" class="fb">ссылка на фейсбук</a>
+            <a href="https://www.facebook.com/" class="fb" aria-label="Наш фейсбук"></a>
           </li>
           <li>
-            <a href="https://www.youtube.com/" class="youtube">ссылка на ютуб</a>
+            <a href="https://www.youtube.com/" class="youtube" aria-label="Наш ютуб"></a>
           </li>
         </ul>
       </div>
-      <div class="partner">
+      <div class="html-academy">
         <p>
           Website by
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy">Лейбл html academy</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo" aria-label="Сайт html academy"></a>
         </p>
       </div>
     </footer>
