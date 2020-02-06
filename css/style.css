@@ -79,16 +79,6 @@ h1 {
     text-align: center;
 }
 
-/* .real-city {
-    display: inline-block;
-    margin-right: -5px;
-}
-
-.real-city img {
-    position: relative;
-    top: 125px;
-} */
-
 .advantages-blue {
     text-align: center;
     vertical-align: middle;
@@ -99,24 +89,37 @@ h1 {
 }
 
 .city-filling li {
-    /* display: inline-block; */
     width: 400px;
-    /* background-color: #eeeeee;
-    margin-left: -4px; */
 }
 
-/* .city-filling li:first-child {
-    margin-left: -40px;
-} */
-
-
 .advantages-gray {
-    /* display: inline-block; */
     text-align: center;
             
     background-color: #eeeeee;
     width: 400px;
     height: 256px;
+}
+
+
+.home {
+    width: 75px;
+    height: 72px;
+    background-image: url(../img/icon-1.svg);
+    background-repeat: no-repeat;
+}
+
+.food {
+    width: 74px;
+    height: 70px;
+    background-image: url(../img/icon-2.svg);
+    background-repeat: no-repeat;
+}
+
+.souvenirs {
+    width: 64px;
+    height: 76px;
+    background-image: url(../img/icon-3.svg);
+    background-repeat: no-repeat;
 }
 
 /*форма главной страницы */
@@ -158,14 +161,6 @@ h1 {
     border: none;
 }
 
-/* .search-form {
-    width: 568px;
-    height: 395px;
-} */
-
-/* .form {
-    display: none;
-} */
 .search-form input[type="text"],
 .search-form input[type="number"],
 .search-form label {
@@ -235,6 +230,43 @@ h1 {
     color: #000000;
 }
 
+.socials li {
+    list-style: none;
+}
+
+.tw {
+    display: block;
+    width: 46px;
+    height: 48px;
+    background-image: url(../img/tw-icon.svg);
+    background-repeat: no-repeat;
+    background-color: #81b3d2;
+    background-size: 17px 15px;
+    background-position: center;
+}
+
+.fb {
+    display: block;
+    width: 46px;
+    height: 48px;
+    background-image: url(../img/fb-icon.svg);
+    background-repeat: no-repeat;
+    background-color: #81b3d2;
+    background-size: 12px 22px;
+    background-position: center;
+}
+
+.youtube {
+    display: block;
+    width: 46px;
+    height: 48px;
+    background-image: url(../img/youtube-icon.svg);
+    background-repeat: no-repeat;
+    background-color: #81b3d2;
+    background-size: 20px 16px;
+    background-position: center;
+}
+
 .contacts a {
     color: #000000;
 }
@@ -248,7 +280,6 @@ h1 {
     display: block;
     width: 115px;
     height: 41px;
-    background-size: 100px;
     background-image: url(../img/logo-htmlacademy.svg);
     background-repeat: no-repeat;
 }
@@ -268,6 +299,18 @@ h1 {
     line-height: 21px;
     color: #ffffff;
 }
+
+
+
+/* .infrastructure label:before:active {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/checkbox-on.svg);
+    background-repeat: no-repeat;
+    background-size: 23px 23px;
+} */
 
 .hotels-sorting p {
     font-size: 16px;
@@ -454,4 +497,18 @@ h1 {
     width: 110px;
 }
 
+.star {
+    background-image: url(../img/star.svg);
+    background-repeat: repeat;
+    width: 36px;
+    height: 17px;
+}
+
+.hotel-star {
+    width: 72px;
+}
+
+.motel-star {
+    width: 54px;
+}
 
