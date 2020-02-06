@@ -244,13 +244,15 @@ h1 {
     color: #000000;
 }
 
-.html-academy-logo {
+.html-academy a {
+    display: block;
     width: 115px;
     height: 41px;
     background-size: 100px;
     background-image: url(../img/logo-htmlacademy.svg);
     background-repeat: no-repeat;
 }
+
 
 /* форма сортировки отелей */
 .hotels-sorting {
