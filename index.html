@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <a href="index.html">
-        <img src="img/logo-sedona.svg" alt="Sedona">
+        <div class="logo-sedona">
+          <img src="img/logo-sedona.svg" alt="Sedona">
+        </div>
       </a>
       <nav>
         <ul class="navigation">
@@ -33,20 +34,23 @@
       <div class="sedona-photo">
         <img src="img/sedona.jpg" alt="Sedona" width="1200" height="773">
       </div>
+      <div class="white-line"></div>
+      <div class="introduction">
+        <h1>Седона-небольшой городок в аризоне, заслуживающий большего!</h1>
+        <h2>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
+      </div>
       <section class="causes">
-        <div class="introduction">
-          <h1>Седона-небольшой городок в аризоне, заслуживающий большего!</h1>
-          <h2>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
-        </div>
         <ul>
-          <li class="rectangle city">
-            <div class="advantages-blue real-city">
-              <h3>Настоящий городок</h3>
-              <p>№1</p>
-              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
-            <div class="real-city">
-              <img src="img/Layer-10.jpg" alt="фото Города" width="800" height="256">
+          <li class="rectangle">
+            <div class="blue-box">
+              <div class="advantages-blue">
+                <h3>Настоящий городок</h3>
+                <p>— №1 —</p>
+                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <div class="real-city">
+                <img src="img/Layer-10.jpg" alt="фото Города" width="800" height="256">
+              </div>
             </div>
             <ul class="city-filling">
               <li>
@@ -70,38 +74,42 @@
             <div class="bridge-devil">
               <img src="img/Layer-5.jpg" alt="Гора" width="800" height="256">
             </div>
-            <div class="advantages-blue bridge">
+            <div class="advantages-blue">
               <h3>Там есть мост дьявола</h3>
-              <p>№2</p>
+              <p>— №2 —</p>
               <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
             </div>
           </li>
-          <li class="rectangle advantages-gray">
-            <h3>Небольшая площадь</h3>
-            <p>№3</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="rectangle advantages-gray">
-            <h3>Красивая дорога</h3>
-            <p>№4</p>
-            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="rectangle advantages-gray">
-            <h3>Мало туристов</h3>
-            <p>№5</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
-          </li>
         </ul>
+        <div class="gray-box">
+          <ul>
+            <li class="rectangle advantages-gray">
+              <h3>Небольшая площадь</h3>
+              <p>— №3 —</p>
+              <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="rectangle advantages-gray">
+              <h3>Красивая дорога</h3>
+              <p>— №4 —</p>
+              <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+            </li>
+            <li class="rectangle advantages-gray">
+              <h3>Мало туристов</h3>
+              <p>— №5 —</p>
+              <p>Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </ul>  
+        </div> 
       </section>
       <section class="search">
         <div class="address">
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
+        <div class="form">  
           <form class="button-search" action="#" method="GET">
             <input type="button" value="Поиск гостиницы в Седоне">
           </form>
-        <div class="form">  
           <form class="search-form" action="#" method="GET">
             <div class="check-in-date">
               <label>Дата заезда: 
@@ -113,15 +121,17 @@
                 <input type="text" name="check-out" value="4 июля 2017">
               </label>
             </div>
-            <div class="adults">
-              <label>Взрослые:
-                <input type="number" name="adults" min="0" value="2">
-              </label>
-            </div>
-            <div class="children">
-              <label>Дети:
-                <input type="number" name="children" min="0" value="0">
-              </label>
+            <div class="number-human">
+              <div class="adults">
+                <label>Взрослые:
+                  <input type="number" name="adults" min="0" value="2">
+                </label>
+              </div>
+              <div class="children">
+                <label>Дети:
+                  <input type="number" name="children" min="0" value="0">
+                </label>
+              </div>
             </div>
             <div class="button">
               <input type="submit" name="search" value="Найти">
@@ -132,7 +142,7 @@
           <img src="img/map.jpg" alt="карта расположения" width="1200" height="593">
         </div>
       </section>
-      <footer>
+      <footer class="footer">
         <div class="contacts">
           <a href="#">#visitsedona</a>
           <p>Тел: <a href="tel:+7(945)666-02-66">+7(945)666-02-66</a></p>
@@ -153,8 +163,8 @@
         <div class="html-academy">
           <p>
             Website by
-            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт html academy"><div class="html-academy-logo"></div></a>
           </p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-html-academy" aria-label="Сайт html academy"></a>
         </div>
       </footer>
     </main>
