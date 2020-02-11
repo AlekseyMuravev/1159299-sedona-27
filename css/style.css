@@ -31,9 +31,11 @@ body {
     justify-content: center;
     width: 1280px;
     background-color: #f2f2f2;
-    margin: 0;
     padding: 0;
-
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
     font-family: "PT Sans", Arial, sans-serif; 
     font-size: 14px;
     line-height: 21px;
