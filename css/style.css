@@ -25,12 +25,19 @@
          url('../fonts/pt-sans-v11-latin_cyrillic-700.svg#PTSans') format('svg'); /* Legacy iOS */
   }
 
+.background {
+    width: 1280px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f2f2f2;
+}  
+
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 1280px;
-    background-color: #f2f2f2;
+    width: 1200px;
     padding: 0;
     margin: 0;
     margin-left: auto;
@@ -49,9 +56,9 @@ a {
 }
 
 /* header */
-.header .logo-sedona {
+.header img {
     position: absolute;
-    left: 569px;
+    left: 50%;
     width: 140px;
     height: 72px;
     z-index: 2;
@@ -60,15 +67,13 @@ a {
 .navigation {
     position: absolute;
     top: 0;
-    margin-top: 0;
-    margin-left: 40px;
+    left: auto;
     z-index: 1;
     
     display: flex;
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    margin-left: 40px;
     width: 1200px;
     background-color: #ffffff;
     list-style: none; 
@@ -315,6 +320,7 @@ a {
 }
 
 .form {
+    -webkit-appearance: none;
     display: flex;
     flex-direction: column;
     padding: 0;
