@@ -399,7 +399,6 @@ a {
 }
 
 .form {
-    -webkit-appearance: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -417,6 +416,7 @@ a {
 }
 
 .button-search input[type="button"] {
+    -webkit-appearance: none;
     font: inherit;
     font-size: 21px;
     font-weight: bold;
@@ -536,6 +536,7 @@ a {
 }
 
 .search-form input[type="submit"] {
+    -webkit-appearance: none;
     font: inherit;
     font-size: 21px;
     font-weight: bold;
