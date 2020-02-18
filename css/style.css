@@ -133,8 +133,8 @@ a {
     text-align: center;
     background-color: #ffffff;
     
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 41px;
     z-index: 1; 
 }
@@ -142,7 +142,7 @@ a {
 .introduction::before {
     display: block;
     content: url(../img/polygon.png);
-    transform: translate(-301px, -57px);
+    transform: translate(-51px, -57px);
 }
 
 .introduction h1 {
@@ -150,9 +150,11 @@ a {
     font-weight: bold;
     line-height: 26px;
     color: #000000;
+    max-width: 440px;
 
     padding: 0;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 34px;
 }
 
@@ -371,7 +373,6 @@ a {
 .search-form input[type="text"],
 .search-form input[type="number"],
 .search-form label {
-    -webkit-appearance: none;
     font: inherit;
     font-size: 14px;
     font-weight: bold;
@@ -379,6 +380,12 @@ a {
     text-transform: uppercase;
     color: #000000; 
     height: 38px;
+}
+
+.check-in-date {
+    position: relative;
+
+    margin-bottom: 28px;
 }
 
 .check-in-date svg {
@@ -389,13 +396,8 @@ a {
     fill: #a9a9a9;
 }
 
-.check-in-date {
-    position: relative;
-
-    margin-bottom: 28px;
-}
-
 .check-in-date input[type="text"] {
+    -webkit-appearance: none;
     padding-left: 13px;
     margin-left: 19px;
 }
@@ -415,6 +417,7 @@ a {
 }
 
 .check-out-date input[type="text"] {
+    -webkit-appearance: none;
     padding-left: 12px;
     margin-left: 17px;
 }
