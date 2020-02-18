@@ -133,8 +133,8 @@ a {
     text-align: center;
     background-color: #ffffff;
     
-    padding-left: 355px;
-    padding-right: 355px;
+    padding-left: 300px;
+    padding-right: 300px;
     padding-bottom: 41px;
     z-index: 1; 
 }
@@ -142,7 +142,7 @@ a {
 .introduction::before {
     display: block;
     content: url(../img/polygon.png);
-    transform: translate(-356px, -57px);
+    transform: translate(-301px, -57px);
 }
 
 .introduction h1 {
@@ -371,6 +371,7 @@ a {
 .search-form input[type="text"],
 .search-form input[type="number"],
 .search-form label {
+    -webkit-appearance: none;
     font: inherit;
     font-size: 14px;
     font-weight: bold;
@@ -444,7 +445,6 @@ a {
 }
 
 .search-form input[type="number"] {
-    -webkit-appearance: none;
     text-align: center;
 
     width: 114px;
