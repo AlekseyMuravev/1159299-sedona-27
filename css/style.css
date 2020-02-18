@@ -121,26 +121,28 @@ a {
 /* main-главной страницы */
 .sedona-photo {
     width: 1200px;
-    height: 773px;
+    height: 780px;
+    background-color: #81b3d2;
+    background-image: url(../img/sedona.jpg);
 }
 
 .introduction {
     position: absolute;
-    top: 564px;
+    top: 562px;
     width: 1200px;
     text-align: center;
     background-color: #ffffff;
     
     padding-left: 355px;
     padding-right: 355px;
-    padding-bottom: 39px;
+    padding-bottom: 41px;
     z-index: 1; 
 }
 
 .introduction::before {
     display: block;
     content: url(../img/polygon.png);
-    transform: translate(-356px, -58px);
+    transform: translate(-356px, -57px);
 }
 
 .introduction h1 {
@@ -166,12 +168,13 @@ a {
 /* карточка наполнения */
 .real-city {
     width: 800px;
-    height: 256px;    
+    height: 256px; 
+    background-color: #766357;   
 }
 
-.causes {
+/* .causes {
     margin-top: 7px;
-}
+} */
 
 .causes ul {
     list-style: none;
@@ -441,6 +444,7 @@ a {
 }
 
 .search-form input[type="number"] {
+    -webkit-appearance: none;
     text-align: center;
 
     width: 114px;
