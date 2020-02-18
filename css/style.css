@@ -25,18 +25,23 @@
          url('../fonts/pt-sans-v11-latin_cyrillic-700.svg#PTSans') format('svg'); /* Legacy iOS */
   }
 
-html { 
-    box-sizing: border-box; 
-}  
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 .background {
     position: relative;
-    width: 1280px;
+    width: 1200px;
+    background-color: #f2f2f2;
+
     padding: 0;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    background-color: #f2f2f2;
+    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2); 
 }  
 
 body {
@@ -46,6 +51,8 @@ body {
     font-weight: normal;
     color: #333333;   
     text-transform: uppercase; 
+    background-color: #f2f2f2;
+
     padding: 0;
     margin: 0;
 }
@@ -57,29 +64,29 @@ a {
 /* header */
 .header img {
     position: absolute;
-    left: 50%;
-    margin-left: -70px;
     width: 140px;
     height: 72px;
-    z-index: 2;
+    top: 0;  
+    left: 50%;
+    transform: translate(-50%, -1px);  
+    z-index: 2;   
 }
 
 .navigation {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: 1;
-    
     display: flex;
     justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    margin-left: -600px;
     width: 1200px;
-    background-color: #ffffff;
     list-style: none; 
+    background-color: #ffffff;
+
+    padding: 0;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin: 0;
+    z-index: 1;
+
+    position: absolute;
+    top: 0;
 }
 
 .navigation a {
@@ -99,32 +106,14 @@ a {
 }
 
 .navigation li {
+    text-align: center;
     width: 239px;
+
     margin: 0;
 }
 
 .navigation li:nth-child(2) {
     margin-right: 122px;
-}
-
-.navigation li:first-child a {
-    padding-left: 72px;
-    padding-right: 74px;
-}
-
-.navigation li:nth-child(2) a {
-    padding-left: 73px;
-    padding-right: 68px;
-}
-
-.navigation li:nth-child(3) a {
-    padding-left: 76px;
-    padding-right: 73px;
-}
-
-.navigation li:last-child a {
-    padding-left: 88px;
-    padding-right: 72px;
 }
 
 .navigation li:nth-child(3) {
@@ -139,42 +128,34 @@ a {
 .sedona-photo {
     width: 1200px;
     height: 773px;
-    margin-left: auto;
-    margin-right: auto; 
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);   
-}
-
-.white-line {
-    position: absolute;
-    background-image: url(../img/polygon.png);
-    width: 1202px;
-    height: 59px;
-    top: 507px;
-    left: 50%;
-    margin-left: -601px;    
 }
 
 .introduction {
     position: absolute;
     top: 564px;
-    left: 50%;
-    margin-left: -600px;
-    z-index: 1;
-    
     width: 1200px;
     text-align: center;
-    background-color: #ffffff;    
+    background-color: #ffffff;
+    
+    padding-left: 355px;
+    padding-right: 355px;
+    padding-bottom: 39px;
+    z-index: 1; 
+}
+
+.introduction::before {
+    display: block;
+    content: url(../img/polygon.png);
+    transform: translate(-356px, -58px);
 }
 
 .introduction h1 {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
-    text-align: center;
     color: #000000;
-    padding-top: 54px;
-    padding-left: 350px;
-    padding-right: 365px;
+
+    padding: 0;
     margin: 0;
     margin-bottom: 34px;
 }
@@ -183,11 +164,8 @@ a {
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
-    text-align: center;
+
     padding: 0;
-    padding-left: 350px;
-    padding-right: 365px;
-    padding-bottom: 48px;
     margin: 0;
 }
 
@@ -197,222 +175,163 @@ a {
     height: 256px;    
 }
 
-.devil {
-    width: 800px;
-    height: 256px;
-}
-
 .causes {
-    width: 1200px;
-    margin-top: 1px;
-    margin-left: auto;
-    margin-right: auto; 
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2); 
+    margin-top: 7px;
 }
 
 .causes ul {
     list-style: none;
-    width: 1200px;
+    
     padding: 0;
     margin: 0;
 }
 
-.advantages-blue {
-    text-align: center;
+.blue {
     color: #ffffff;
-    padding: 0;
-    
     background-color: #81b3d2;
+}
+
+.advantages {
+    text-align: center;
     width: 400px;
+
+    padding: 0;
+    padding-top: 40px;
+    padding-left: 49px;
+    padding-right: 49px;
+    padding-bottom: 61px;    
 }
 
 .blue-box {
     display: flex;
+
     padding: 0;
-    margin: 0;
-    width: 1200px;
+    margin: 0;   
 } 
 
-.blue-box h3 {
+.advantages h3 {
     font-size: 21px;
-    text-align: center;
+    max-width: 150px;
+
     padding: 0;
-    padding-left: 109px;
-    padding-right: 109px;
-    padding-top: 39px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.advantages p:first-of-type {
+    padding: 0;
     margin: 0;
     margin-bottom: 25px;
 }
 
-.advantages-blue p:first-of-type {
+.advantages p:last-of-type {
     padding: 0;
     margin: 0;
-    margin-bottom: 25px;
-}
-
-.advantages-blue p:last-of-type {
-    padding: 0;
-    margin: 0;
-    padding-left: 49px;
-    padding-right: 49px;
-    padding-bottom: 59px;
 }
 
 .city-filling {
     display: flex;
     align-items: baseline;
+    background-color: #ffffff;
+
     margin: 0;
-    padding: 0;
-    width: 1200px;
-    background-color: #ffffff; 
+    padding: 0;    
 }
 
 .city-filling li {
-    width: 400px;  
+    text-align: center;
+    width: 400px; 
+
+    padding-top: 50px; 
+    padding-left: 59px;
+    padding-right: 59px;
+    padding-bottom: 79px;
 }
 
 .city-filling h3 {
     font-size: 21px;
-    text-align: center;
-    margin-top: 0;
+
+    margin: 0;
     margin-bottom: 28px;
 }
 
 .city-filling p {
-    text-align: center;
     margin: 0;
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-bottom: 81px;
 }
 
-.home {
-    width: 75px;
-    height: 70px;
+.city-filling img {
     margin: 0;
-    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 28px;
-    background-image: url(../img/icon-1.svg);
-    background-repeat: no-repeat;
-}
-
-.food {
-    width: 74px;
-    height: 70px;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 28px;
-    background-image: url(../img/icon-2.svg);
-    background-repeat: no-repeat;
-}
-
-.souvenirs {
-    width: 64px;
-    height: 76px;
-    margin-top: 54px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 28px;
-    background-image: url(../img/icon-3.svg);
-    background-repeat: no-repeat;
 }
 
 .gray-box ul{
     display: flex;
-    padding: 0;
-    margin: 0;
-    width: 1200px;
 }
 
-.advantages-gray {
-    text-align: center;
+.gray {
     color: #000000;
-    padding: 0;
-    width: 400px;
     background-color: #eeeeee;
 }
 
-.advantages-gray h3 {
-    font-size: 21px;
-    text-align: center;
-    padding: 0;
-    padding-top: 39px;
-    padding-left: 124px;
-    padding-right: 124px;
-    margin: 0;
-    margin-bottom: 26px;  
-}
+.gray p:last-child {
+    max-width: 258px;
 
-.advantages-gray p:first-of-type {
-    padding: 0;
     margin: 0;
-    margin-bottom: 26px;
-}
-
-.advantages-gray p:last-of-type {
-    padding: 0;
-    padding-left: 71px;
-    padding-right: 71px;
-    padding-bottom: 60px;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*форма главной страницы */
-.search {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+.map-sedona {
+    height: 593px;
 }
 
 .address {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
+    text-align: center;
     width: 1200px;
     background-color: #ffffff;
+
+    padding: 0;
+    padding-top: 54px;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 133px;
+    margin: 0;
 }
 
 .address h2 {
     font-size: 30px;
     line-height: 36px;
-    text-align: center;
     color: #000000;
-    padding: 0;
-    padding-top: 54px;
+
     margin: 0;
     margin-bottom: 20px;
 }
 
 .address p {
     line-height: 24px;
-    text-align: center;
-    padding: 0;
-    padding-left: 383px;
-    padding-right: 383px;
+
     margin: 0;
-    margin-bottom: 133px;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
-    padding-bottom: 55px;
-    margin: 0;
     width: 568px;
     background-color: #ffffff;
-        
+
+    padding: 0;
+    margin: 0;
+            
     position: absolute;
-    top: 2075px;
+    top: 2083px;
     left: 50%;
-    right: 50%;
-    margin-left: -284px;
+    transform: translateX(-50%);
 }
 
 .button-search input[type="button"] {
@@ -422,15 +341,14 @@ a {
     font-weight: bold;
     line-height: 26px;
     text-transform: uppercase;
-    text-align: center;
     color: #ffffff;
+    width: 568px;
 
     background-color: #766357;
-    width: 568px;
-    padding: 0;
     padding-top: 30px;
+    padding-left: 139px;
+    padding-right: 140px;
     padding-bottom: 30px;
-    text-align: center;
     border: none;
 }
 
@@ -444,6 +362,13 @@ a {
     
     background-color: #503e33;
     border: none;
+}
+
+.search-form {
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 55px;
 }
 
 .search-form input[type="text"],
@@ -460,31 +385,34 @@ a {
 
 .check-in-date svg {
     position: absolute;
-    top: 150px;
-    right: 64px;
+    top: 50%;
+    left: 100%;
+    transform: translate(-39px, -50%);
     fill: #a9a9a9;
 }
 
 .check-in-date {
-    padding-top: 55px;
-    text-align: center;
+    position: relative;
+
     margin-bottom: 28px;
 }
 
 .check-in-date input[type="text"] {
     padding-left: 13px;
-    margin-left: 21px;
+    margin-left: 19px;
 }
 
 .check-out-date {
-    text-align: center;
+    position: relative;
+
     margin-bottom: 29px;
 }
 
 .check-out-date svg {
     position: absolute;
-    top: 216px;
-    right: 64px;
+    top: 50%;
+    left: 100%;
+    transform: translate(-39px, -50%);
     fill: #a9a9a9;
 }
 
@@ -496,9 +424,9 @@ a {
 .number-human {
     display: flex;
     justify-content: space-between;
+
     padding: 0;
     margin: 0;
-    width: 458px;
     margin-bottom: 52px;
 }
 
@@ -512,17 +440,18 @@ a {
 }
 
 .search-form input[type="text"] {
+    width: 346px;
+
     background-color: #f2f2f2;
     border: 0;
-    width: 333px;
 }
 
 .search-form input[type="number"] {
     text-align: center;
-    
+
+    width: 114px;
     background-color: #f2f2f2;
     border: 0;
-    width: 114px;
 }
 
 .search-form input[type="text"]:hover,
@@ -544,10 +473,12 @@ a {
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
-
-    background-color: #81b3d2;
     width: 458px;
+    background-color: #81b3d2;
+    
     padding-top: 16px;
+    padding-left: 196px;
+    padding-right: 197px;
     padding-bottom: 16px;
     border: none;
 }
@@ -564,27 +495,25 @@ a {
     border: none;
 }
 
-.map-sedona {
-    width: 1200px;
-}
-
 /* footer */
 .footer {
-    position: absolute;
-    top: 2634px;
-    left: 40px;
-    width: 1200px;
-    padding: 0;
-    margin: 0;
-    background-color:rgba(255, 255, 255, 0.9);
     display: flex;
-    justify-content: stretch;
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+    justify-content: space-between;
+    width: 1200px;
+    background-color:rgba(255, 255, 255, 0.9);
+    
+    padding-top: 29px;
+    padding-left: 132px;
+    padding-right: 101px;
+    padding-bottom: 29px;
+    margin: 0;
+    
+    position: absolute;
+    top: 2642px;
 }
 
 .footer-catalog {
     top: 813px;
-    border-top: 1px solid rgba(0, 1, 1, 0.2);
 }
 
 .contacts {
@@ -594,23 +523,14 @@ a {
     font-weight: bold;
     line-height: 26px;
     color: #000000;
-    width: 400px;
 }
 
 .contacts> a {
-    padding-top: 26px;
-    padding-left: 132px;
-    margin-bottom: 12px;    
+    margin-bottom: 10px;    
 }
 
 .contacts p {
-    padding-left: 132px;
-    padding-bottom: 32px;
     margin: 0;    
-}
-
-.socials {
-    width: 400px;
 }
 
 .socials ul{
@@ -620,8 +540,6 @@ a {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    padding-top: 34px;
-    margin-bottom: 31px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -658,7 +576,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
 }
 
 .html-academy p {
@@ -686,11 +603,6 @@ a {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
-}
-
-section {
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .hotels-sorting {
