@@ -161,6 +161,7 @@ a {
 .introduction h2 {
     font-size: 14px;
     line-height: 26px;
+    min-width: 489px;
     font-weight: normal;
 
     padding: 0;
@@ -388,12 +389,11 @@ a {
     margin-bottom: 28px;
 }
 
-.check-in-date svg {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-39px, -50%);
-    fill: #a9a9a9;
+.check-in-date::after,
+.check-out-date::after {
+    display: block;
+    content: url(../img/calendar.svg);
+    transform: translate(430px, -30px);
 }
 
 .check-in-date input[type="text"] {
@@ -406,14 +406,6 @@ a {
     position: relative;
 
     margin-bottom: 29px;
-}
-
-.check-out-date svg {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-39px, -50%);
-    fill: #a9a9a9;
 }
 
 .check-out-date input[type="text"] {
