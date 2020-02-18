@@ -384,7 +384,7 @@ a {
 }
 
 .check-in-date {
-    position: relative;
+    min-width: 458px;
 
     margin-bottom: 28px;
 }
@@ -397,13 +397,12 @@ a {
 }
 
 .check-in-date input[type="text"] {
-    -webkit-appearance: none;
     padding-left: 13px;
     margin-left: 19px;
 }
 
 .check-out-date {
-    position: relative;
+    min-width: 458px;
 
     margin-bottom: 29px;
 }
