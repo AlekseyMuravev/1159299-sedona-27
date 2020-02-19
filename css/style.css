@@ -74,11 +74,8 @@ a {
     background-color: #ffffff;
 
     padding: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
     margin: 0;
     z-index: 1;
-
     position: absolute;
     top: 0;
 }
@@ -89,6 +86,9 @@ a {
     line-height: 26px;
     color: #000000;
     font-weight: bold;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
 } 
 
 .navigation a:hover {
@@ -121,28 +121,27 @@ a {
 /* main-главной страницы */
 .sedona-photo {
     width: 1200px;
-    height: 780px;
+    height: 773px;
     background-color: #81b3d2;
     background-image: url(../img/sedona.jpg);
 }
 
 .introduction {
     position: absolute;
-    top: 562px;
+    top: 564px;
     width: 1200px;
     text-align: center;
     background-color: #ffffff;
     
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 41px;
+    padding: 0%;
+    padding-bottom: 39px;
     z-index: 1; 
 }
 
 .introduction::before {
     display: block;
     content: url(../img/polygon.png);
-    transform: translate(-51px, -57px);
+    transform: translateY(-57px);
 }
 
 .introduction h1 {
@@ -153,6 +152,7 @@ a {
     max-width: 440px;
 
     padding: 0;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 34px;
@@ -169,15 +169,15 @@ a {
 }
 
 /* карточка наполнения */
+.causes {
+    margin-top: 7px;
+}
+
 .real-city {
     width: 800px;
     height: 256px; 
     background-color: #766357;   
 }
-
-/* .causes {
-    margin-top: 7px;
-} */
 
 .causes ul {
     list-style: none;
@@ -297,10 +297,12 @@ a {
 
     padding: 0;
     padding-top: 54px;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 383px;
+    padding-right: 383px;
     padding-bottom: 133px;
     margin: 0;
+
+    position: relative;
 }
 
 .address h2 {
@@ -329,7 +331,7 @@ a {
     margin: 0;
             
     position: absolute;
-    top: 2083px;
+    bottom: -395px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -365,6 +367,8 @@ a {
 }
 
 .search-form {
+    width: 568px;
+    
     padding-top: 55px;
     padding-left: 55px;
     padding-right: 55px;
@@ -384,27 +388,33 @@ a {
 }
 
 .check-in-date {
+    position: relative;
     min-width: 458px;
-
-    margin-bottom: 28px;
-}
-
-.check-in-date::after,
-.check-out-date::after {
-    display: block;
-    content: url(../img/calendar.svg);
-    transform: translate(430px, -30px);
+    margin-bottom: 31px;
 }
 
 .check-in-date input[type="text"] {
     padding-left: 13px;
-    margin-left: 19px;
+    margin-left: 20px;
 }
 
 .check-out-date {
+    position: relative;
     min-width: 458px;
+    margin-bottom: 30px;
+}
 
-    margin-bottom: 29px;
+.check img {
+    fill: #cacaca;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-10px,-50%);
+}
+
+.check img:hover {
+    fill: #81b3d2;
 }
 
 .check-out-date input[type="text"] {
@@ -494,27 +504,26 @@ a {
     width: 1200px;
     background-color:rgba(255, 255, 255, 0.9);
     
-    padding-top: 29px;
-    padding-left: 132px;
-    padding-right: 101px;
-    padding-bottom: 29px;
+    padding: 0;
     margin: 0;
     
     position: absolute;
-    top: 2642px;
+    bottom: 0;
 }
 
-.footer-catalog {
-    top: 813px;
+.footer-block {
+    width: 400px;
+    padding-top: 34px;
+    padding-bottom: 32px;
 }
 
 .contacts {
-    display: flex;
-    flex-direction: column;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
     color: #000000;
+
+    padding-left: 132px;
 }
 
 .contacts> a {
@@ -523,6 +532,10 @@ a {
 
 .contacts p {
     margin: 0;    
+}
+
+.contacts a {
+    color: #000000;
 }
 
 .socials ul{
@@ -560,10 +573,6 @@ a {
     background-color: #5496bd;
 }
 
-.contacts a {
-    color: #000000;
-}
-
 .html-academy {
     display: flex;
     justify-content: center;
@@ -591,23 +600,20 @@ a {
 }
 
 /* форма сортировки отелей */
-.sedona-filter {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+.navigation-cataog {
+    position: static;
 }
 
 .hotels-sorting {
     display: flex;
     width: 1200px;
-    padding: 0;
     padding-top: 29px;
+    padding-left: 72px;
+    padding-right: 74px;
+    padding-bottom: 31px;
     margin: 0;
-             
-    position: absolute;
-    top: 56px;
-    left: 50%;
-    margin-left: -600px;
+    background-image: url(../img/filter-sedona.jpg);         
+    background-position-y: -60px;
 }
 
 .hotels-sorting p {
@@ -617,7 +623,6 @@ a {
 }
 
 .infrastructure {
-    padding-left: 72px;
     margin: 0;
 }
 
@@ -636,7 +641,7 @@ a {
     list-style: none;
 }
 
-.infrastructure ul {
+.hotels-sorting ul {
     margin: 0;
 }
 
@@ -657,13 +662,15 @@ a {
     margin-left: 380px;
 }
 
-.price-day p {
+.price-day>p {
     margin-bottom: 13px;
 }
 
 .price-number {
     display: flex;
     padding: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
     margin: 0;
     margin-bottom: 13px;
     width: 314px;
@@ -673,8 +680,6 @@ a {
 
 .price-number p {
     font-weight: normal;
-    margin-top: 6px;
-    margin-bottom: 6px;
     text-align: center;
     width: 157px;
 }
@@ -695,6 +700,7 @@ a {
 }
 
 .price-day input[type="range"] {
+    margin: 0;
     margin-bottom: 23px;
 }
 
@@ -725,73 +731,76 @@ a {
 /* сортировка отелей */
 .sorting {
     display: flex;
+    align-items: baseline;
     padding: 0;
     margin: 0;
-    margin-left: 40px;
     width: 1200px;
-    
-
-    position: absolute;
-    top: 273px;
     background-color: #ffffff;
     border-bottom: 1px solid rgba(0, 1, 1, 0.2);
 }
 
+.sorting{
+    display: flex;
+}
+
+.sorting-price,
+.sorting-id {
+    display: flex;
+    align-items: baseline;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    width: 600px;
+}
+
+.sorting-price {
+    justify-content: space-between;
+    padding-left: 72px;
+}
+
 .sorting ul {
+    display: flex;
+    justify-content: space-between;
+    width: 238px;
     list-style: none;
-}
-
-.sorting p:first-child {
-    padding-top: 29px;
+    padding: 0;
+    padding-right: 16px;
     margin: 0;
 }
 
-.sorting p:last-of-type {
-    padding-top: 36px;
-    margin: 0;
+.sorting-id ul {
+    width: 600px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 73px;
 }
 
-.sorting p,
+.sorting-price p,
 .sorting a {
     font-size: 12px;
     line-height: 18px;
     color: #000000;
+    margin: 0;
 }
 
 .sorting p:first-child {
-    margin-left: 72px;
+    
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
 }
 
-.sorting p:nth-child(2) {
-    margin-left: 49px;
-}
-
-.sorting ul {
-    display: flex;
-}
-
-.sorting ul:first-of-type {
-    padding: 0;
-    padding-top: 35px;
-    padding-bottom: 30px;
-    margin: 0;
-}
-
 .sorting-price li:first-child a {
-    align-self: center;
-    margin-left: 40px;
+    
+    
     color: #81b3d2;
     border: none;
 }
 
 .sorting-price li:nth-of-type(2) a,
 .sorting-price li:nth-of-type(3) a {
-    margin-left: 33px;
-    color: rgba(0, 0, 0, 0.3);
-    align-self: center;
+        color: rgba(0, 0, 0, 0.3);
+    
     border-bottom: 1px dotted #81b3d2;
 }
 
@@ -806,22 +815,8 @@ a {
     border-bottom: none;
 }
 
-.sorting-id {
-    display: flex;
-    justify-content: center;
-    margin-top: 11px;
-}
-
-.sorting-id li:first-child {
-    padding-top: 11px;
-}
-
-.sorting-id li:last-child {
-    padding-top: 36px;
-}
-
 .sorting-id li:first-child a {
-    margin-left: 460px;
+    
     border: 10px solid #cacaca;
     border-right-width: 5px;
     border-left-width: 5px;
@@ -883,11 +878,6 @@ a {
     width: 1200px;
     background-color: #ffffff;
     list-style: none;
-
-    position: absolute;
-    top: 360px;
-    left: 50%;
-    margin-left: -600px;
 }
 
 .hotels li {
@@ -1008,4 +998,8 @@ a {
 .apartments-star {
     width: 42px;
     margin-left: 70px;
+}
+
+.footer-catalog {
+    position: static;
 }

@@ -52,17 +52,17 @@
               </div>
               <ul class="city-filling">
                 <li>
-                  <img src="img/icon-1.svg" width="75" height="70">
+                  <img src="img/icon-1.svg" alt="Дом" width="75" height="70">
                   <h3>Жильё</h3>
                   <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li>
-                  <img src="img/icon-2.svg" width="74" height="70">
+                  <img src="img/icon-2.svg" alt="Бургер" width="74" height="70">
                   <h3>Еда</h3>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li>
-                  <img src="img/icon-3.svg" width="64" height="76">
+                  <img src="img/icon-3.svg" alt="Сувенир" width="64" height="76">
                   <h3>Сувениры</h3>
                   <p>Не только китайского, но и местного производства!</p>
                 </li>
@@ -103,38 +103,40 @@
           <div class="address">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          </div>
-          <div class="form">  
-            <form class="button-search" action="#" method="GET">
-              <input type="button" value="Поиск гостиницы в Седоне">
-            </form>
-            <form class="search-form" action="#" method="GET">
-              <div class="check-in-date">
-                <label>Дата заезда: 
-                  <input type="text" name="check-in" value="24 апреля 2017">
-                </label>
-              </div>
-              <div class="check-out-date">
-                <label>Дата выезда: 
-                  <input type="text" name="check-out" value="4 июля 2017">
-                </label>
-              </div>
-              <div class="number-human">
-                <div class="adults">
-                  <label>Взрослые:
-                    <input type="number" name="adults" min="0" value="2">
+            <div class="form">  
+              <form class="button-search" action="#" method="GET">
+                <input type="button" value="Поиск гостиницы в Седоне">
+              </form>
+              <form class="search-form" action="#" method="GET">
+                <div class="check-in-date check">
+                  <label>Дата заезда: 
+                    <input type="text" name="check-in" maxlength="20" value="24 апреля 2017">
                   </label>
+                  <img src="img/calendar.svg" alt="">
                 </div>
-                <div class="children">
-                  <label>Дети:
-                    <input type="number" name="children" min="0" value="0">
+                <div class="check-out-date check">
+                  <label>Дата выезда: 
+                    <input type="text" name="check-out" maxlength="20" value="24 апреля 2017">
                   </label>
+                  <img src="img/calendar.svg" alt="">
                 </div>
-              </div>
-              <div class="button">
-                <input type="submit" name="search" value="Найти">
-              </div>
-            </form>
+                <div class="number-human">
+                  <div class="adults">
+                    <label>Взрослые:
+                      <input type="number" name="adults" min="0" value="2">
+                    </label>
+                  </div>
+                  <div class="children">
+                    <label>Дети:
+                      <input type="number" name="children" min="0" value="0">
+                    </label>
+                  </div>
+                </div>
+                <div class="button">
+                  <input type="submit" name="search" value="Найти">
+                </div>
+              </form>
+            </div>
           </div>
           <div class="map-sedona">
             <img src="img/map.jpg" alt="карта расположения" width="1200" height="593">
@@ -142,11 +144,11 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="contacts">
+        <div class="footer-block contacts">
           <a href="#">#visitsedona</a>
           <p>Тел: <a href="tel:+7(945)666-02-66">+7(945)666-02-66</a></p>
         </div>
-        <div class="socials">
+        <div class="footer-block socials">
           <ul>
             <li>
               <a href="https://twitter.com/" class="social-button" aria-label="Наш твитер">
@@ -171,7 +173,7 @@
             </li>
           </ul>
         </div>
-        <div class="html-academy">
+        <div class="footer-block html-academy">
           <p>
             Website by
           </p>
