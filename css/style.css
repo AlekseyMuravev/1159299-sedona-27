@@ -607,10 +607,10 @@ a {
 .hotels-sorting {
     display: flex;
     width: 1200px;
-    padding-top: 29px;
+    padding-top: 27px;
     padding-left: 72px;
     padding-right: 74px;
-    padding-bottom: 31px;
+    padding-bottom: 28px;
     margin: 0;
     background-image: url(../img/filter-sedona.jpg);         
     background-position-y: -60px;
@@ -768,40 +768,12 @@ a {
     margin: 0;
 }
 
-.sorting-id ul {
-    width: 600px;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 73px;
-}
-
 .sorting-price p,
 .sorting a {
     font-size: 12px;
     line-height: 18px;
     color: #000000;
     margin: 0;
-}
-
-.sorting p:first-child {
-    
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
-}
-
-.sorting-price li:first-child a {
-    
-    
-    color: #81b3d2;
-    border: none;
-}
-
-.sorting-price li:nth-of-type(2) a,
-.sorting-price li:nth-of-type(3) a {
-        color: rgba(0, 0, 0, 0.3);
-    
-    border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting li:nth-of-type(2) a:hover,
@@ -815,8 +787,37 @@ a {
     border-bottom: none;
 }
 
-.sorting-id li:first-child a {
+.sorting-id {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.sorting-id ul {
+    width: 600px;
+    justify-content: flex-end;
+    padding-right: 73px;
+}
+
+
+.sorting p:first-child {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.sorting-price li:first-child a {
+    color: #81b3d2;
+    border: none;
+}
+
+.sorting-price li:nth-of-type(2) a,
+.sorting-price li:nth-of-type(3) a {
+        color: rgba(0, 0, 0, 0.3);
     
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-id li:first-child a {
+    display: block;
     border: 10px solid #cacaca;
     border-right-width: 5px;
     border-left-width: 5px;
@@ -844,6 +845,7 @@ a {
 }
 
 .sorting-id li:last-child a {
+    display: block;
     margin-left: 12px;
     border: 10px solid #81b3d2;
     border-right-width: 5px;
@@ -851,6 +853,8 @@ a {
     border-right-color: transparent;
     border-left-color: transparent; 
     border-bottom-color: transparent;
+
+    transform: translateY(50%);
 }
 
 .sorting-id li:last-child a:hover {
@@ -889,16 +893,18 @@ a {
 }
 
 .hotel {
-    margin-top: 30px;
-    margin-left: 72px;
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    padding-top: 30px;
+    padding-left: 72px;
+    padding-right: 105px;
+    padding-bottom: 30px;
 }
 
 .hotel-text {
     width: 258px;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    padding: 0;
 }
 
 .hotel-text> a{
@@ -906,6 +912,8 @@ a {
     font-weight: bold;
     line-height: 26px;
     color: #000000;
+
+    margin: 0;
 }
 
 .hotel-text> a:hover {
@@ -914,6 +922,12 @@ a {
 
 .hotel-text> a:active {
     color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-text p {
+    margin: 0;
+    margin-top: 6px;
+    margin-bottom: 10px;
 }
 
 .price {
@@ -931,6 +945,9 @@ a {
     color: #ffffff;
     text-align: center;
     width: 110px;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
  
     background-color: #81b3d2;
 }
@@ -949,6 +966,8 @@ a {
     color: #ffffff;
     text-align: center;
     width: 142px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 
     background-color: #766357;
 }
@@ -964,23 +983,27 @@ a {
 }
 
 .rating {
-    margin-top: 29px;
-    margin-left: 522px;
-    margin-bottom: 30px;
+    width: 600px;
+    align-self: center; 
+    text-align: center;
+    padding-left: 417px;
 }
 
 .rating p {
     color: #666666;
-    text-align: center;
-
+    
     background-color: rgba(0, 1, 1, 0.2);
     width: 110px;
-    margin-top: 0;
+    margin: 0;
+    padding-top: 3px;
+    padding-right: 0;
+    padding-bottom: 3px;
 }
 
 .star {
     background-image: url(../img/star.svg);
     background-repeat: space;
+    margin: 0;
     margin-bottom: 47px;
     height: 17px;
 }
