@@ -68,6 +68,7 @@ a {
 
 .navigation {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 1200px;
     list-style: none; 
@@ -270,6 +271,7 @@ a {
 
 .gray-box ul{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .gray {
@@ -500,6 +502,7 @@ a {
 /* footer */
 .footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 1200px;
     background-color:rgba(255, 255, 255, 0.9);
