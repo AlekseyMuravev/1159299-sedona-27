@@ -7,11 +7,13 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="background">
+    <div class="container">
       <header class="header">
-        <a href="#">
-          <img src="img/logo-sedona.svg" alt="Sedona">
-        </a>
+        <div class="logo">
+          <a>
+            <img src="img/logo-sedona.svg" alt="Sedona">
+          </a>
+        </div>
         <nav>
           <ul class="navigation">
             <li>
@@ -30,12 +32,12 @@
         </nav>  
       </header>
       <main>
-        <div class="sedona-photo">
-          
-        </div>
-        <div class="introduction">
-          <h1>Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
-          <h2>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
+        <div class="promo">
+          <div class="introduction">
+            <div class="white-polygon"></div>
+            <h1>Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
+            <h2>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
+          </div>
         </div>
         <section class="causes">
           <ul>
@@ -103,43 +105,33 @@
           <div class="address">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <div class="form">  
-              <form class="button-search" action="#" method="GET">
-                <input type="button" value="Поиск гостиницы в Седоне">
-              </form>
-              <form class="search-form" action="#" method="GET">
-                <div class="check-in-date check">
-                  <label>Дата заезда: 
-                    <input type="text" name="check-in" maxlength="20" value="24 апреля 2017">
-                  </label>
-                  <img src="img/calendar.svg" alt="">
-                </div>
-                <div class="check-out-date check">
-                  <label>Дата выезда: 
-                    <input type="text" name="check-out" maxlength="20" value="24 апреля 2017">
-                  </label>
-                  <img src="img/calendar.svg" alt="">
-                </div>
-                <div class="number-human">
-                  <div class="adults">
-                    <label>Взрослые:
-                      <input type="number" name="adults" min="0" value="2">
-                    </label>
-                  </div>
-                  <div class="children">
-                    <label>Дети:
-                      <input type="number" name="children" min="0" value="0">
-                    </label>
-                  </div>
-                </div>
-                <div class="button">
-                  <input type="submit" name="search" value="Найти">
-                </div>
-              </form>
-            </div>
+            <form action="#" method="GET">
+              <input type="button" class="button button-search" value="Поиск гостиницы в Седоне">
+            </form>
           </div>
-          <div class="map-sedona">
-            <img src="img/map.jpg" alt="карта расположения" width="1200" height="593">
+          <div class="map-modal">
+            <div class="map">
+              <img src="img/map.jpg" alt="карта расположения" width="1200" height="593">
+            </div>
+            <form class="modal" action="#" method="GET">
+              <label>Дата заезда: 
+                  <input type="text" name="check-in" class="check-date check" maxlength="20" value="24 апреля 2017">
+              </label>
+              <img src="img/calendar.svg" alt="">
+              <label>Дата выезда: 
+                <input type="text" name="check-out" class="check-date check" maxlength="20" value="24 апреля 2017">
+              </label>
+              <img src="img/calendar.svg" alt="">
+              <div class="persone-number">
+                <label>Взрослые:
+                  <input type="number" class="persone" name="adults" min="0" value="2">
+                </label>
+                <label>Дети:
+                  <input type="number" class="persone" name="children" min="0" value="0">
+                </label>
+              </div>
+              <input type="submit" class="button button-submit" name="search" value="Найти">
+            </form>
           </div>
         </section>
       </main>

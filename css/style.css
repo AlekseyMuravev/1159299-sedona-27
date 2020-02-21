@@ -26,7 +26,7 @@
     box-sizing: inherit;
   }
 
-.background {
+.container {
     position: relative;
     width: 1200px;
     background-color: #f2f2f2;
@@ -55,14 +55,18 @@ a {
     text-decoration: none;
 }
 
+.header {
+    position: relative;
+}
+
 /* header */
-.header img {
+.logo {
     position: absolute;
     width: 140px;
     height: 72px;
     top: 0;  
     left: 50%;
-    transform: translate(-50%, -1px);  
+    transform: translateX(-50%);  
     z-index: 2;   
 }
 
@@ -76,9 +80,6 @@ a {
 
     padding: 0;
     margin: 0;
-    z-index: 1;
-    position: absolute;
-    top: 0;
 }
 
 .navigation a {
@@ -87,8 +88,10 @@ a {
     line-height: 26px;
     color: #000000;
     font-weight: bold;
-
+    
     padding-top: 15px;
+    padding-left: 72px;
+    padding-right: 68px;
     padding-bottom: 15px;
 } 
 
@@ -120,29 +123,31 @@ a {
 }
 
 /* main-главной страницы */
-.sedona-photo {
-    width: 1200px;
-    height: 773px;
+.promo {
     background-color: #81b3d2;
     background-image: url(../img/sedona.jpg);
+    background-position-y: -56px;
+    padding-top: 507px;
 }
 
 .introduction {
-    position: absolute;
-    top: 564px;
-    width: 1200px;
+    position: relative;
     text-align: center;
     background-color: #ffffff;
-    
-    padding: 0%;
-    padding-bottom: 39px;
-    z-index: 1; 
+    padding-top: 62px;
+    padding-left: 355px;
+    padding-right: 356px;
+    padding-bottom: 43px;
 }
 
-.introduction::before {
-    display: block;
-    content: url(../img/polygon.png);
-    transform: translateY(-57px);
+.white-polygon {
+    position: absolute;
+    background-image: url(../img/polygon.png);
+    width: 1202px;
+    height: 59px;
+    top: -57px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .introduction h1 {
@@ -162,7 +167,6 @@ a {
 .introduction h2 {
     font-size: 14px;
     line-height: 26px;
-    min-width: 489px;
     font-weight: normal;
 
     padding: 0;
@@ -170,10 +174,6 @@ a {
 }
 
 /* карточка наполнения */
-.causes {
-    margin-top: 7px;
-}
-
 .real-city {
     width: 800px;
     height: 256px; 
@@ -195,8 +195,6 @@ a {
 .advantages {
     text-align: center;
     width: 400px;
-
-    padding: 0;
     padding-top: 40px;
     padding-left: 49px;
     padding-right: 49px;
@@ -281,30 +279,25 @@ a {
 
 .gray p:last-child {
     max-width: 258px;
-
+    
     margin: 0;
     margin-left: auto;
     margin-right: auto;
 }
 
 /*форма главной страницы */
-.map-sedona {
+.map {
     height: 593px;
 }
 
 .address {
     text-align: center;
-    width: 1200px;
     background-color: #ffffff;
 
-    padding: 0;
     padding-top: 54px;
-    padding-left: 383px;
-    padding-right: 383px;
-    padding-bottom: 133px;
+    padding-left: 316px;
+    padding-right: 316px;
     margin: 0;
-
-    position: relative;
 }
 
 .address h2 {
@@ -320,31 +313,42 @@ a {
     line-height: 24px;
 
     margin: 0;
+    margin-bottom: 47px;
 }
 
-.form {
+.map-modal {
+    position: relative;
+}
+
+.modal {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 568px;
     background-color: #ffffff;
 
-    padding: 0;
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 55px;
     margin: 0;
-            
     position: absolute;
-    bottom: -395px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
+    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2); 
 }
 
-.button-search input[type="button"] {
-    -webkit-appearance: none;
+.button {
     font: inherit;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
     text-transform: uppercase;
+}
+
+.button-search{
     color: #ffffff;
     width: 568px;
 
@@ -356,30 +360,21 @@ a {
     border: none;
 }
 
-.button-search input[type="button"]:hover {
+.button-search:hover {
     background-color: #604e43;
     border: none;
 }
 
-.button-search input[type="button"]:active {
+.button-search:active {
     color: rgba(255, 255, 255, 0.3);
     
     background-color: #503e33;
     border: none;
 }
 
-.search-form {
-    width: 568px;
-    
-    padding-top: 55px;
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-bottom: 55px;
-}
-
-.search-form input[type="text"],
-.search-form input[type="number"],
-.search-form label {
+.check-date,
+.persone,
+.modal label {
     font: inherit;
     font-size: 14px;
     font-weight: bold;
@@ -395,15 +390,9 @@ a {
     margin-bottom: 31px;
 }
 
-.check-in-date input[type="text"] {
+.check-date {
     padding-left: 13px;
     margin-left: 20px;
-}
-
-.check-out-date {
-    position: relative;
-    min-width: 458px;
-    margin-bottom: 30px;
 }
 
 .check img {
@@ -419,38 +408,31 @@ a {
     fill: #81b3d2;
 }
 
-.check-out-date input[type="text"] {
+.check-date {
     -webkit-appearance: none;
+    width: 346px;
+    background-color: #f2f2f2;
+    border: 0;
     padding-left: 12px;
     margin-left: 17px;
 }
 
-.number-human {
+.persone-number {
     display: flex;
     justify-content: space-between;
+    width: 458px;
 
     padding: 0;
     margin: 0;
     margin-bottom: 52px;
 }
 
-.adults input[type="number"] {
+.persone {
     padding-left: 0;
     margin-left: 37px;
 }
 
-.children input[type="number"] {
-    margin-left: 27px;
-}
-
-.search-form input[type="text"] {
-    width: 346px;
-
-    background-color: #f2f2f2;
-    border: 0;
-}
-
-.search-form input[type="number"] {
+.persone {
     text-align: center;
 
     width: 114px;
@@ -458,23 +440,18 @@ a {
     border: 0;
 }
 
-.search-form input[type="text"]:hover,
-.search-form input[type="number"]:hover {
+.check-date:hover,
+.persone:hover {
     background-color: #ebebeb;
 }
 
-.search-form input[type="text"]:focus,
-.search-form input[type="number"]:focus {
+.check-date:focus,
+.persone:focus {
     background-color: #ffffff;
 }
 
-.search-form input[type="submit"] {
-    -webkit-appearance: none;
-    font: inherit;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
-    text-transform: uppercase;
+/* кнопка отправки формы */
+.button-submit {
     text-align: center;
     color: #ffffff;
     width: 458px;
@@ -487,12 +464,12 @@ a {
     border: none;
 }
 
-.search-form input[type="submit"]:hover {
+.button-submit:hover {
     background-color: #669ec0;
     border: none;
 }
 
-.search-form input[type="submit"]:active {
+.button-submit:active {
     color: rgba(255, 255, 255, 0.3);
 
     background-color: #5496bd;
@@ -504,7 +481,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1200px;
     background-color:rgba(255, 255, 255, 0.9);
     
     padding: 0;
