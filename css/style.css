@@ -32,9 +32,9 @@
     background-color: #f2f2f2;
 
     padding: 0;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2); 
 }  
 
@@ -89,10 +89,7 @@ a {
     color: #000000;
     font-weight: bold;
     
-    padding-top: 15px;
-    padding-left: 72px;
-    padding-right: 68px;
-    padding-bottom: 15px;
+    padding: 15px 72px 15px 68px;
 } 
 
 .navigation a:hover {
@@ -134,10 +131,11 @@ a {
     position: relative;
     text-align: center;
     background-color: #ffffff;
-    padding-top: 62px;
+    padding: 62px 355px 43px;
+    /* padding-top: 62px;
     padding-left: 355px;
     padding-right: 356px;
-    padding-bottom: 43px;
+    padding-bottom: 43px; */
 }
 
 .white-polygon {
@@ -158,10 +156,10 @@ a {
     max-width: 440px;
 
     padding: 0;
-    margin: 0;
-    margin-left: auto;
+    margin: 0 auto 34px;
+    /* margin-left: auto;
     margin-right: auto;
-    margin-bottom: 34px;
+    margin-bottom: 34px; */
 }
 
 .introduction h2 {
@@ -195,10 +193,11 @@ a {
 .advantages {
     text-align: center;
     width: 400px;
-    padding-top: 40px;
+    padding: 40px 49px 61px;
+    /* padding-top: 40px;
     padding-left: 49px;
     padding-right: 49px;
-    padding-bottom: 61px;    
+    padding-bottom: 61px;     */
 }
 
 .blue-box {
@@ -213,10 +212,10 @@ a {
     max-width: 150px;
 
     padding: 0;
-    margin: 0;
-    margin-left: auto;
+    margin: 0 auto 25px;
+    /* margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
+    margin-bottom: 25px; */
 }
 
 .advantages p:first-of-type {
@@ -243,10 +242,11 @@ a {
     text-align: center;
     width: 400px; 
 
-    padding-top: 50px; 
+    padding: 50px 59px 79px;
+    /* padding-top: 50px; 
     padding-left: 59px;
     padding-right: 59px;
-    padding-bottom: 79px;
+    padding-bottom: 79px; */
 }
 
 .city-filling h3 {
@@ -261,10 +261,10 @@ a {
 }
 
 .city-filling img {
-    margin: 0;
-    margin-left: auto;
+    margin: 0 auto 28px;
+    /* margin-left: auto;
     margin-right: auto;
-    margin-bottom: 28px;
+    margin-bottom: 28px; */
 }
 
 .gray-box ul{
@@ -280,9 +280,9 @@ a {
 .gray p:last-child {
     max-width: 258px;
     
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 /*форма главной страницы */
@@ -293,10 +293,7 @@ a {
 .address {
     text-align: center;
     background-color: #ffffff;
-
-    padding-top: 54px;
-    padding-left: 316px;
-    padding-right: 316px;
+    padding: 54px 316px 0;
     margin: 0;
 }
 
@@ -311,7 +308,6 @@ a {
 
 .address p {
     line-height: 24px;
-
     margin: 0;
     margin-bottom: 47px;
 }
@@ -327,10 +323,11 @@ a {
     width: 568px;
     background-color: #ffffff;
 
-    padding-top: 55px;
+    padding: 55px;
+    /* padding-top: 55px;
     padding-left: 55px;
     padding-right: 55px;
-    padding-bottom: 55px;
+    padding-bottom: 55px; */
     margin: 0;
     position: absolute;
     top: 0;
@@ -353,10 +350,12 @@ a {
     width: 568px;
 
     background-color: #766357;
-    padding-top: 30px;
+
+    padding: 30px 140px;
+    /* padding-top: 30px;
     padding-left: 139px;
     padding-right: 140px;
-    padding-bottom: 30px;
+    padding-bottom: 30px; */
     border: none;
 }
 
@@ -384,17 +383,6 @@ a {
     height: 38px;
 }
 
-.check-in-date {
-    position: relative;
-    min-width: 458px;
-    margin-bottom: 31px;
-}
-
-.check-date {
-    padding-left: 13px;
-    margin-left: 20px;
-}
-
 .check img {
     fill: #cacaca;
 
@@ -413,6 +401,18 @@ a {
     width: 346px;
     background-color: #f2f2f2;
     border: 0;
+}
+
+.modal label{ 
+    margin-bottom: 30px;
+}
+
+.date-in {
+    padding-left: 13px;
+    margin-left: 20px;
+}
+
+.date-out {
     padding-left: 12px;
     margin-left: 17px;
 }
@@ -424,7 +424,11 @@ a {
 
     padding: 0;
     margin: 0;
-    margin-bottom: 52px;
+    margin-bottom: 53px;
+}
+
+.persone-number label {
+    margin: 0;
 }
 
 .persone {
@@ -457,10 +461,11 @@ a {
     width: 458px;
     background-color: #81b3d2;
     
-    padding-top: 16px;
+    padding: 16px 197px;
+    /* padding-top: 16px;
     padding-left: 196px;
     padding-right: 197px;
-    padding-bottom: 16px;
+    padding-bottom: 16px; */
     border: none;
 }
 
@@ -492,8 +497,9 @@ a {
 
 .footer-block {
     width: 400px;
-    padding-top: 34px;
-    padding-bottom: 32px;
+    padding: 34px 0 32px;
+    /* padding-top: 34px;
+    padding-bottom: 32px; */
 }
 
 .contacts {
@@ -523,9 +529,9 @@ a {
     width: 156px;
     justify-content: space-between;
     padding: 0;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 .socials li {
