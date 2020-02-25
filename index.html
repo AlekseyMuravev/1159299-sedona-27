@@ -34,7 +34,6 @@
       <main>
         <div class="promo">
           <div class="introduction">
-            <div class="white-polygon"></div>
             <h1>Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
             <h2>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
           </div>
@@ -54,17 +53,23 @@
               </div>
               <ul class="city-filling">
                 <li>
-                  <img src="img/icon-1.svg" alt="Дом" width="75" height="70">
+                  <div class="city-filling-icon">
+                    <img src="img/icon-1.svg" alt="Дом" width="75" height="70">
+                  </div>
                   <h3>Жильё</h3>
                   <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li>
-                  <img src="img/icon-2.svg" alt="Бургер" width="74" height="70">
+                  <div class="city-filling-icon">
+                    <img src="img/icon-2.svg" alt="Бургер" width="74" height="70">
+                  </div>
                   <h3>Еда</h3>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li>
-                  <img src="img/icon-3.svg" alt="Сувенир" width="64" height="76">
+                  <div class="city-filling-icon">
+                    <img src="img/icon-3.svg" alt="Сувенир" width="64" height="76">
+                  </div>
                   <h3>Сувениры</h3>
                   <p>Не только китайского, но и местного производства!</p>
                 </li>
@@ -113,14 +118,16 @@
             <div class="map">
               <img src="img/map.jpg" alt="карта расположения" width="1200" height="593">
             </div>
-            <form class="modal" action="#" method="GET">
+            <form class="modal modal-none" action="#" method="GET">
               <label>Дата заезда: 
-                  <input type="text" name="check-in" class="check-date date-in" maxlength="20" value="24 апреля 2017">
+                <input type="text" name="check-in" class="check-date date-in" maxlength="20" value="24 апреля 2017">
               </label>
+              <input type="image" src="img/calendar.svg" class="calendar">
               <!-- <img src="img/calendar.svg" alt=""> -->
               <label>Дата выезда: 
                 <input type="text" name="check-out" class="check-date date-out" maxlength="20" value="24 апреля 2017">
               </label>
+              <input type="image" src="img/calendar.svg" class="calendar-2">
               <!-- <img src="img/calendar.svg" alt=""> -->
               <div class="persone-number">
                 <label>Взрослые:
