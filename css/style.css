@@ -94,7 +94,7 @@ a {
     font-weight: bold;
     max-width: 98px;
     
-    padding: 15px 0;
+    padding: 14px 0 16px;
     margin: 0 auto;
 } 
 
@@ -109,8 +109,6 @@ a {
 .navigation li {
     text-align: center;
     width: 239px;
-
-    margin: 0;
 }
 
 .navigation li:nth-child(2) {
@@ -130,14 +128,14 @@ a {
     background-color: #81b3d2;
     background-image: url(../img/sedona.jpg);
     background-position-y: -56px;
-    padding-top: 507px;
+    padding-top: 508px;
 }
 
 .introduction {
     position: relative;
     text-align: center;
     background-color: #ffffff;
-    padding: 62px 355px 43px;
+    padding: 60px 350px 51px;
 }
 
 .introduction::before {
@@ -146,7 +144,7 @@ a {
     height: 59px;
     background-image: url('../img/polygon.png');
     position: absolute;
-    top: -57px;
+    top: -58px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -159,7 +157,7 @@ a {
     max-width: 440px;
 
     padding: 0;
-    margin: 0 auto 34px;
+    margin: 0 auto 27px;
 }
 
 .introduction h2 {
@@ -193,7 +191,7 @@ a {
 .advantages {
     text-align: center;
     width: 400px;
-    padding: 40px 49px 61px;
+    padding: 47px 49px 59px;
 }
 
 .blue-box {
@@ -206,15 +204,14 @@ a {
 .advantages h3 {
     font-size: 21px;
     max-width: 150px;
-
     padding: 0;
-    margin: 0 auto 25px;
+    margin: 0 auto 24px;
 }
 
 .advantages p:first-of-type {
     padding: 0;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
 }
 
 .advantages p:last-of-type {
@@ -235,22 +232,22 @@ a {
     text-align: center;
     width: 400px; 
 
-    padding: 50px 59px 79px;
+    padding: 56px 59px 82px;
+}
+
+.city-filling-icon {
+    margin-bottom: 23px;
 }
 
 .city-filling h3 {
     font-size: 21px;
 
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 .city-filling p {
     margin: 0;
-}
-
-.city-filling-icon {
-    margin-bottom: 28px;
 }
 
 .gray-box ul{
@@ -277,7 +274,7 @@ a {
 .address {
     text-align: center;
     background-color: #ffffff;
-    padding: 54px 316px 0;
+    padding: 50px 316px 0;
     margin: 0;
 }
 
@@ -287,7 +284,7 @@ a {
     color: #000000;
 
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .address p {
@@ -491,7 +488,7 @@ a {
 
 .footer-block {
     width: 400px;
-    padding: 34px 0 32px;
+    padding: 31px 0;
 }
 
 .contacts {
@@ -500,11 +497,12 @@ a {
     line-height: 26px;
     color: #000000;
 
-    padding-left: 132px;
+    padding-left: 124px;
 }
 
 .contacts> a {
-    margin-bottom: 10px;    
+    display: block;
+    margin-bottom: 6px;    
 }
 
 .contacts p {
@@ -515,10 +513,14 @@ a {
     color: #000000;
 }
 
+.socials {
+    padding: 36px 0 30px;
+}
+
 .socials ul{
     display: flex;
     flex-wrap: wrap;
-    width: 156px;
+    width: 150px;
     justify-content: space-between;
     padding: 0;
     margin: 0 auto;
@@ -557,7 +559,7 @@ a {
 .html-academy p {
     line-height: 26px;
     color: #000000;
-    margin-right: 9px;
+    margin-right: 7px;
 }
 
 .logo-html-academy {
