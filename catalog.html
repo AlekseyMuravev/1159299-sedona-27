@@ -26,7 +26,7 @@
               <a href="#">Карта штата</a>
             </li>
             <li>
-              <a href="catalog.html">Гостиницы</a>
+              <a class="this-page">Гостиницы</a>
             </li>
           </ul>
         </nav>  
@@ -38,19 +38,28 @@
                 <p>Инфраструктура:<p>
                   <ul>
                     <li>
-                      <label>
+                      <label class="checkbox">
                         <input type="checkbox" name="pool" checked>
-                      Бассейн</label>
+                        <div class="checkbox-text">
+                          Бассейн
+                        </div>
+                      </label>
                     </li>
                     <li>
-                      <label>
+                      <label class="checkbox">
                         <input type="checkbox" name="parking">
-                      Парковка</label>
+                        <div class="checkbox-text">
+                          Парковка
+                        </div>
+                      </label>
                     </li>
                     <li>
-                      <label>
+                      <label class="checkbox">
                         <input type="checkbox" name="wi-fi">
-                      Wi-Fi</label>
+                        <div class="checkbox-text">
+                          Wi-Fi
+                        </div>
+                      </label>
                     </li>
                   </ul>
               </div>
@@ -58,19 +67,28 @@
                 <p>Тип жилья:</p>
                 <ul>
                   <li>
-                    <label>
+                    <label class="checkbox">
                       <input type="checkbox" name="hotel" checked>
-                    Гостиница</label>
+                      <div class="checkbox-text">
+                        Гостиница
+                      </div>
+                    </label>
                   </li>
                   <li>
-                    <label>
+                    <label class="checkbox">
                       <input type="checkbox" name="motel" checked>
-                    Мотель</label>
+                      <div class="checkbox-text">
+                        Мотель
+                      </div>
+                    </label>
                   </li>
                   <li>
-                    <label>
+                    <label class="checkbox">
                       <input type="checkbox" name="apartments" checked>
-                    Апартаменты</label>
+                      <div class="checkbox-text">
+                        Апартаменты
+                      </div>
+                    </label>
                   </li>
                 </ul>
               </div>
@@ -81,7 +99,12 @@
                   <p>|</p>
                   <p>До 3000</p>
                 </div>
-                <input type="range" min="0" max="3000">
+                <div class="range">
+                  <div class="filter-button min"></div>
+                  <div class="range-white"></div>
+                  <div class="filter-button max"></div>
+                  <div class="range-opacity"></div>
+                </div>
                 <input type="submit" name="show" value="Показать">
               </div>
             </div>
@@ -103,12 +126,16 @@
             </ul>
           </div>
           <div class="sorting-id">
-            <ul class="sorting-id">
+            <ul>
               <li>
-                <a href="#" aria-label="По убыванию"></a>
+                <a href="#">
+                  <img src="img/icon-up-dir.svg" alt="По убыванию">
+                </a>
               </li>
               <li>
-                <a href="#" aria-label="По возрастанию"></a>
+                <a href="#">
+                  <img src="img/icon-down-dir.svg" alt="По возрастанию">
+                </a>
               </li>
             </ul>
           </div>
