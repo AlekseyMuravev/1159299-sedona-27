@@ -32,34 +32,22 @@
         </nav>  
       </header>
       <main>
-          <form action="#" method="GET">
-            <div class="hotels-sorting">
+          <form class="hotels-sorting" action="#" method="GET">
+            <div class="checkbox-sorting">
               <div class="infrastructure">
                 <p>Инфраструктура:<p>
                   <ul>
                     <li>
-                      <label class="checkbox">
-                        <input type="checkbox" name="pool" checked>
-                        <div class="checkbox-text">
-                          Бассейн
-                        </div>
-                      </label>
+                      <input class="checkbox" type="checkbox" id="pool" name="pool" checked>
+                      <label class="checkbox-label" for="pool">Бассейн</label>
                     </li>
                     <li>
-                      <label class="checkbox">
-                        <input type="checkbox" name="parking">
-                        <div class="checkbox-text">
-                          Парковка
-                        </div>
-                      </label>
+                      <input class="checkbox" type="checkbox" id="parking" name="parking">
+                      <label class="checkbox-label" for="parking">Парковка</label>
                     </li>
                     <li>
-                      <label class="checkbox">
-                        <input type="checkbox" name="wi-fi">
-                        <div class="checkbox-text">
-                          Wi-Fi
-                        </div>
-                      </label>
+                      <input class="checkbox" type="checkbox" id="wi-fi" name="wi-fi">
+                      <label class="checkbox-label" for="wi-fi">Wi-Fi</label>
                     </li>
                   </ul>
               </div>
@@ -67,46 +55,34 @@
                 <p>Тип жилья:</p>
                 <ul>
                   <li>
-                    <label class="checkbox">
-                      <input type="checkbox" name="hotel" checked>
-                      <div class="checkbox-text">
-                        Гостиница
-                      </div>
-                    </label>
+                    <input class="checkbox" type="checkbox" id="hotel" name="hotel" checked>
+                    <label class="checkbox-label" for="hotel">Гостиница</label>
                   </li>
                   <li>
-                    <label class="checkbox">
-                      <input type="checkbox" name="motel" checked>
-                      <div class="checkbox-text">
-                        Мотель
-                      </div>
-                    </label>
+                    <input class="checkbox" type="checkbox" id="motel" name="motel" checked>
+                    <label class="checkbox-label" for="motel">Мотель</label>
                   </li>
                   <li>
-                    <label class="checkbox">
-                      <input type="checkbox" name="apartments" checked>
-                      <div class="checkbox-text">
-                        Апартаменты
-                      </div>
-                    </label>
+                    <input class="checkbox" type="checkbox" id="apartments" name="apartments" checked>
+                    <label class="checkbox-label" for="apartments">Апартаменты</label>
                   </li>
                 </ul>
               </div>
-              <div class="price-day">
-                <p>Стоимость в сутки (Р):</p>
-                <div class="price-number">
-                  <p>От 0</p>
-                  <p>|</p>
-                  <p>До 3000</p>
-                </div>
-                <div class="range">
-                  <div class="filter-button min"></div>
-                  <div class="range-white"></div>
-                  <div class="filter-button max"></div>
-                  <div class="range-opacity"></div>
-                </div>
-                <input type="submit" name="show" value="Показать">
+            </div>
+            <div class="price-day">
+              <p>Стоимость в сутки (Р):</p>
+              <div class="price-number">
+                <p>От 0</p>
+                <p>|</p>
+                <p>До 3000</p>
               </div>
+              <div class="range">
+                <div class="filter-button min"></div>
+                <div class="range-white"></div>
+                <div class="filter-button max"></div>
+                <div class="range-opacity"></div>
+              </div>
+              <input type="submit" name="show" value="Показать">
             </div>
           </form>
         <div class="sorting">
@@ -144,7 +120,7 @@
           <ul>
             <li>
               <div class="hotel">
-                <div class="holet-img">
+                <div class="hotel-img">
                   <img src="img/Layer-21.jpg" alt="Гостиница Amara resot & spa" width="135" height="90">
                 </div>
                 <div class="hotel-text">
@@ -166,7 +142,7 @@
             </li>
             <li>
               <div class="hotel">
-                <div class="holet-img">
+                <div class="hotel-img">
                   <img src="img/Layer-89.jpg" alt="Мотель Desert quail inn" width="135" height="90">
                 </div>
                 <div class="hotel-text">

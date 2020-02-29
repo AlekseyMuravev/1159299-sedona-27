@@ -44,7 +44,7 @@
               <div class="blue-box">
                 <div class="advantages blue">
                   <h3>Настоящий городок</h3>
-                  <p>— №1 —</p>
+                  <p>— <span class="blue-number">№1</span> —</p>
                   <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                 <div class="real-city">
@@ -80,8 +80,8 @@
                 <img src="img/Layer-5.jpg" alt="Гора" width="800" height="256">
               </div>
               <div class="advantages blue">
-                <h3>Там есть мост дьявола</h3>
-                <p>— №2 —</p>
+                <h3>Там есть мост&nbsp;дьявола</h3>
+                <p>— <span class="blue-number">№2</span> —</p>
                 <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
               </div>
             </li>
@@ -90,27 +90,30 @@
             <ul>
               <li class="advantages gray">
                 <h3>Небольшая площадь</h3>
-                <p>— <span class="number">№3</span> —</p>
+                <p>— <span class="gray-number">№3</span> —</p>
                 <p>Все достопримечательности находятся очень близко</p>
               </li>
               <li class="advantages gray">
                 <h3>Красивая дорога</h3>
-                <p>— <span class="number">№4</span> —</p>
+                <p>— <span class="gray-number">№4</span> —</p>
                 <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
               </li>
               <li class="advantages gray">
                 <h3>Мало туристов</h3>
-                <p>— <span class="number">№5</span> —</p>
+                <p>— <span class="gray-number">№5</span> —</p>
                 <p>Большинство едет в гранд каньон и толпится там</p>
               </li>
             </ul>  
           </div> 
+          <svg class="calendar">
+            <use xlink:href="img/sprite.svg#calendar" width="21" height="22"></use>
+          </svg>
         </section>
         <section class="search">
           <div class="address">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
-            <form action="#" method="GET">
+            <form action="https://htmlacademy.ru" method="GET">
               <input type="button" class="button button-search" value="Поиск гостиницы в Седоне">
             </form>
           </div>
@@ -128,12 +131,12 @@
               </label>
               <!-- <img src="img/calendar.svg" alt=""> -->
               <div class="persone-number">
-                <div class="block-1">
+                <div class="number-block">
                   <label for="adults">Взрослые:</label>
                   <button class="sign minus minus-adults" type="button"></button>
                   <input type="number" class="persone persone-adults" id="adults" name="adults" min="0" value="2">
                   <button class="sign plus plus-adults" type="button"></button></div>
-                <div class="block-1">
+                <div class="number-block">
                   <label for="children">Дети:</label>
                   <button class="sign minus minus-children" type="button"></button>
                   <input type="number" class="persone persone-children" id="children" name="children" min="0" value="0">
