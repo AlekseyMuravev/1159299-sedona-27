@@ -94,8 +94,7 @@ a {
     font-weight: bold;
     max-width: 100px;
     
-    padding: 14px 0 16px;
-    margin: 0 auto;
+    margin: 14px auto 16px;
 } 
 
 .navigation a:hover {
@@ -152,7 +151,7 @@ a {
     height: 59px;
     background-image: url('../img/polygon.png');
     position: absolute;
-    top: -58px;
+    top: -56px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -162,7 +161,7 @@ a {
     font-weight: bold;
     line-height: 26px;
     color: #000000;
-    max-width: 440px;
+    max-width: 441px;
 
     padding: 0;
     margin: 0 auto 27px;
@@ -199,7 +198,7 @@ a {
 .advantages {
     text-align: center;
     width: 400px;
-    padding: 47px 45px 59px;
+    padding: 47px 48px 59px;
 }
 
 .blue-box {
@@ -252,7 +251,7 @@ a {
     text-align: center;
     width: 400px; 
 
-    padding: 56px 59px 82px;
+    padding: 56px 57px 82px;
 }
 
 .city-filling-icon {
@@ -281,7 +280,7 @@ a {
 }
 
 .gray p:last-child {
-    max-width: 258px;
+    max-width: 264px;
     
     margin: 0 auto;
 }
@@ -354,6 +353,7 @@ a {
     font-weight: bold;
     line-height: 26px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .button-search{
@@ -416,14 +416,24 @@ a {
 .calendar {
     position: absolute;
     top: 62px;
-    left: 480px;
-    fill: #a9a9a9;
+    left: 477px;
+    fill: #cacaca;
+    border: none;
+    background-color: transparent;
 }
 
 .calendar-2 {
     position: absolute;
-    top: 130px;
-    left: 480px;
+    top: 129px;
+    left: 477px;
+}
+
+.calendar:hover {
+    fill: black;
+}
+
+.calendar:active {
+    fill: #81b3d2;
 }
 
 .persone-number {
@@ -456,6 +466,7 @@ a {
     height: 38px;
     background-color:#f2f2f2;
     border: none;
+    cursor: pointer;
 }
 
 .minus::before {
@@ -468,6 +479,10 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+}
+
+.minus::before:hover {
+    color: #000000;
 }
 
 .plus::before,
@@ -803,6 +818,7 @@ a {
     color: #ffffff;
     text-transform: uppercase;
     width: 140px;
+    cursor: pointer;
 
     padding: 6px 0 5px;
     margin: 0 auto;
@@ -898,6 +914,22 @@ a {
 
 .sorting-id li {
     margin-left: 12px;
+}
+
+.arrow {
+    fill: #cacaca;
+}
+
+.arrow:hover {
+    fill: #000000;
+}
+
+.arrow:active {
+    fill: #81b3d2;
+}
+
+.arrow-active {
+    fill: #81b3d2;
 }
 
 /* карточки отелей */
