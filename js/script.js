@@ -1,18 +1,80 @@
-var minus = document.querySelector(".minus-adults");
-var plus = document.querySelector(".plus-adults");
-var number = document.querySelector(".persone-adults").value;
+var buttonSearch = document.querySelector(".button-search");
+var modal = document.querySelector(".modal");
+var form = document.querySelector("form");
+
+var minusAdults = document.querySelector(".minus-adults");
+var plusAdults = document.querySelector(".plus-adults");
+var numberAdults = document.querySelector(".persone-adults").value;
+var minusChildren = document.querySelector(".minus-children");
+var plusChildren = document.querySelector(".plus-children");
+var numberChildren = document.querySelector(".persone-children").value;
+var dateIn = document.querySelector("[name=check-in]");
+var dateInField = document.querySelector(".date-in");
+var dateOut = document.querySelector("[name=check-out]");
+var dateOutField = document.querySelector(".date-out");
 
 
-minus.addEventListener("click" ,function(ent) {
-    if(number>0&&number<=10) {
-        number = Number(number)-1;
+modal.classList.add("modal-none");
+
+buttonSearch.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    if(modal.classList.contains("modal-none")) {
+        modal.classList.remove("modal-none")
     }
-    document.querySelector(".persone-adults").value = number;
+    else {modal.classList.add("modal-none")
+    };
+    dateIn.focus();
 })
 
-plus.addEventListener("click" ,function(evt) {
-    if(number>=0&&number<10) {
-        number = Number(number)+1;
+modal.addEventListener("submit", function(evt) {
+    if(!dateIn.value || !dateOut.value) {
+        evt.preventDefault();
+        if(!dateIn.value) {
+            dateInField.classList.add("modal-error")
+        };
+        if(!dateOut.value) {
+            dateOutField.classList.add("modal-error")
+        };
     }
-    document.querySelector(".persone-adults").value = number;
+})
+
+// window.addEventListener("keydown", function (evt) {
+//     if (evt.keyCode === 27) {
+//       evt.preventDefault();
+//       if (modal.classList.contains("modal-none")) {
+//         modal.classList.remove("modal-none");
+//       }
+//     }
+//   });
+
+minusAdults.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    if(numberAdults>0 && numberAdults<=10) {
+        numberAdults = Number(numberAdults)-1;
+    }
+    document.querySelector(".persone-adults").value = numberAdults;
+})
+
+plusAdults.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    if(numberAdults>=0 && numberAdults<10) {
+        numberAdults = Number(numberAdults)+1;
+    }
+    document.querySelector(".persone-adults").value = numberAdults;
+})
+
+minusChildren.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    if(numberChildren>0 && numberChildren<=10) {
+        numberChildren = Number(numberChildren)-1;
+    }
+    document.querySelector(".persone-children").value = numberChildren;
+})
+
+plusChildren.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    if(numberChildren>=0 && numberChildren<10) {
+        numberChildren = Number(numberChildren)+1;
+    }
+    document.querySelector(".persone-children").value = numberChildren;
 })
