@@ -31,6 +31,11 @@ html {
             box-sizing: inherit;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     position: relative;
     width: 1200px;
@@ -135,7 +140,7 @@ a {
 /* main-главной страницы */
 .promo {
     background-color: #81b3d2;
-    background-image: url(../img/sedona.jpg);
+    background: url(../img/sedona.jpg) no-repeat;
     background-position-y: -56px;
 
     padding-top: 508px;
@@ -153,7 +158,7 @@ a {
     content: "";
     width: 1202px;
     height: 59px;
-    background-image: url("../img/polygon.png");
+    background: url("../img/polygon.png") no-repeat;
     position: absolute;
     top: -56px;
     left: 50%;
@@ -183,6 +188,7 @@ a {
 
 /* карточка наполнения */
 .real-city {
+    display: block;
     width: 800px;
     line-height: 0;
     background-color: #96a28f;   
@@ -788,7 +794,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-image: url(../img/filter-sedona.jpg);         
+    background: url(../img/filter-sedona.jpg) no-repeat;         
     background-position-y: -60px;
 
     margin: 0;
@@ -1141,7 +1147,7 @@ a {
 }
 
 .hotel-img {
-    max-width: 400px;
+    width: 400px;
 
     padding: 30px 0 24px 72px;
 }
@@ -1258,8 +1264,7 @@ a {
 
 .star {
     height: 17px;
-    background-image: url(../img/star.svg);
-    background-repeat: space;   
+    background: url(../img/star.svg) space; 
 
     margin: 0 0 47px 0;    
 }
