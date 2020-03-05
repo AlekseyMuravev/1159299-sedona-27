@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* pt-sans-regular - latin_cyrillic */
 @font-face {
     font-family: 'PT Sans';
@@ -20,18 +22,21 @@
 }
 
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 .container {
     position: relative;
     width: 1200px;
     background-color: #f2f2f2;
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
     
     padding: 0;
     margin: 0 auto;
@@ -65,14 +70,20 @@ a {
     left: 50%;
     width: 140px;
     height: 72px;
-    transform: translateX(-50%);  
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);  
     z-index: 2;   
 }
 
 .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 1200px;
     list-style: none; 
     background-color: #ffffff;
@@ -113,11 +124,11 @@ a {
     margin-left: 122px;
 }
 
-.navigation .this-page {
-    color:#766357;
+.this-page {
+    color: #766357;
 }
 
-.navigation .this-page:hover {
+.this-page:hover {
     color:#766357;
 }
 
@@ -146,7 +157,8 @@ a {
     position: absolute;
     top: -56px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .introduction h1 {
@@ -196,6 +208,8 @@ a {
 }
 
 .blue-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     padding: 0;
@@ -233,8 +247,12 @@ a {
 }
 
 .city-filling {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     background-color: #ffffff;
 
     margin: 0;
@@ -263,8 +281,11 @@ a {
 }
 
 .gray-box ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .gray {
@@ -327,17 +348,26 @@ a {
 }
 
 .modal {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 568px;
     background-color: #ffffff;
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     z-index: 2;
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2); 
+    -webkit-box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2); 
 
     padding: 55px;
     margin: 0;
@@ -399,6 +429,26 @@ a {
     border: 0;
 }
 
+@-webkit-keyframes error {
+    0% , 
+    100% {
+        border: 1px solid #FF0000;
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        border: 2px solid #FF0000;
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        border: 1px solid #FF0000;
+    }
+}
+
 @keyframes error {
     0% , 
     100% {
@@ -420,9 +470,12 @@ a {
 }
 
 .modal-error {
-    animation-name: error;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: error;
+            animation-name: error;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 .modal label{ 
@@ -463,8 +516,12 @@ a {
 }
 
 .persone {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 458px;
 
     padding: 0;
@@ -472,6 +529,8 @@ a {
 }
 
 .number-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -504,7 +563,8 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     z-index: 2;
 }
 
@@ -533,7 +593,8 @@ a {
 }
 
 .plus::after {
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
 }
 
 .persone-number {
@@ -586,9 +647,14 @@ a {
 
 /* footer */
 .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color:rgba(255, 255, 255, 0.9);
     position: absolute;
     bottom: 0;
@@ -632,8 +698,11 @@ a {
 }
 
 .socials ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 150px;
 
     padding: 0;
@@ -652,9 +721,15 @@ a {
 }
 
 .social-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 46px;
     height: 48px;
     background-color: #81b3d2;    
@@ -670,9 +745,15 @@ a {
 }
 
 .html-academy {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .html-academy p {
@@ -698,9 +779,13 @@ a {
 
 /* форма сортировки отелей */
 .hotels-sorting {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 1200px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-image: url(../img/filter-sedona.jpg);         
     background-position-y: -60px;
 
@@ -720,6 +805,8 @@ a {
 
 /* чекбокс */
 .checkbox-sorting {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     padding: 27px 0 5px 72px;
@@ -769,7 +856,8 @@ a {
 }
 
 .checkbox:focus + .checkbox-label::before{
-    box-shadow: 0 0 0 2px #f2f2f2;
+    -webkit-box-shadow: 0 0 0 2px #f2f2f2;
+            box-shadow: 0 0 0 2px #f2f2f2;
     border-radius: 5px;
 }
 
@@ -784,8 +872,13 @@ a {
 }
 
 .price-day {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     padding: 27px 72px 5px 0;
 }
@@ -795,6 +888,8 @@ a {
 }
 
 .price-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 318px;
     border: 2px solid #ffffff;
@@ -828,6 +923,8 @@ a {
 
 .range {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     padding: 9px 0;
@@ -848,7 +945,8 @@ a {
 }
 
 .filter-button svg:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 .min {
@@ -887,15 +985,22 @@ a {
 
 .sorting-button:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #f2f2f2;
+    -webkit-box-shadow: 0 0 0 2px #f2f2f2;
+            box-shadow: 0 0 0 2px #f2f2f2;
     border-radius: 5px;
 }
 
 /* сортировка отелей */
 .sorting {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     width: 1200px;
     background-color: #ffffff;
     border-bottom: 1px solid rgba(0, 1, 1, 0.2);
@@ -905,17 +1010,27 @@ a {
 }
 
 .sorting-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     width: 600px;
 
     padding: 20px 5px 17px 72px;
 }
 
 .sorting-price ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     list-style: none;
     width: 238px;
 
@@ -963,6 +1078,8 @@ a {
 }
 
 .sorting-id ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
 
@@ -1000,8 +1117,12 @@ a {
 }
 
 .hotels li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 1200px;
     border-bottom: 1px solid rgba(0, 1, 1, 0.2);
 
@@ -1009,8 +1130,12 @@ a {
 }
 
 .hotel {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between; 
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; 
 }
 
 .hotel-img {
@@ -1046,8 +1171,12 @@ a {
 }
 
 .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 180px;
 
     padding: 7px 0;
@@ -1059,9 +1188,13 @@ a {
 }
 
 .hotel-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 258px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     padding: 0;
     margin: 0;
@@ -1104,7 +1237,9 @@ a {
 }
 
 .rating {
-    align-self: center; 
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; 
     text-align: center;
 
     padding: 22px 72px 24px 0;
