@@ -5,9 +5,7 @@
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/pt-sans-v11-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
-    src: local('PT Sans'), local('PTSans-Regular'),
-         url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    src: url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff');
 }
   /* pt-sans-700 - latin_cyrillic */
@@ -15,9 +13,7 @@
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/pt-sans-v11-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
-    src: local('PT Sans Bold'), local('PTSans-Bold'),
-         url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+    src: url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
          url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff');
 }
 
@@ -243,10 +239,6 @@ a {
     margin: 0 0 21px;
 }
 
-.calendar {
-    fill: #000000;
-}
-
 .advantages p:last-of-type {
     padding: 0;
     margin: 0;
@@ -278,6 +270,7 @@ a {
 
 .city-filling h3 {
     font-size: 21px;
+    color: #000000;
 
     margin: 0 0 24px;
 }
@@ -295,8 +288,11 @@ a {
 }
 
 .gray {
-    color: #000000;
     background-color: #eeeeee;
+}
+
+.gray h3 {
+    color: #000000;
 }
 
 .gray p:last-child {
@@ -310,7 +306,7 @@ a {
 }
 
 .gray-number {
-    color: #000000;
+    color: #333333;
 }
 
 /*форма главной страницы */
@@ -404,7 +400,7 @@ a {
 }
 
 .button-search a {
-    color: #ffffff;
+    color: #ffffff; 
 }
 
 .button-search:hover {
@@ -504,7 +500,7 @@ a {
     position: absolute;
     top: 62px;
     left: 477px;
-    fill: #cacaca;
+    fill: #a9a9a9;
     background-color: transparent;
     border: none;
 }
@@ -804,7 +800,7 @@ a {
     font-size: 16px;
     font-weight: bolder;
 
-    margin: 0 0 26px;
+    margin: 0 0 25px;
 }
 
 .hotels-sorting li {
@@ -952,6 +948,22 @@ a {
     opacity: 0.5;
 }
 
+.filter-button {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+
+    padding: 0;
+}
+
+.filter-button:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 0 2px #f2f2f2;
+            box-shadow: 0 0 0 2px #f2f2f2;
+    border-radius: 50%;
+}
+
 .filter-button svg:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
@@ -1029,7 +1041,7 @@ a {
             align-items: baseline;
     width: 600px;
 
-    padding: 20px 5px 17px 72px;
+    padding: 20px 11px 17px 72px;
 }
 
 .sorting-price ul {
@@ -1048,7 +1060,8 @@ a {
 .sorting p:first-child {
     font-size: 21px;
     font-weight: bold;
-    line-height: 26px;   
+    line-height: 26px;  
+    margin-right: 7px; 
 }
 
 .sorting-price p,
@@ -1147,8 +1160,6 @@ a {
 }
 
 .hotel-img {
-    width: 400px;
-
     padding: 30px 0 24px 72px;
 }
 
@@ -1255,8 +1266,8 @@ a {
 
 .rating p {
     color: #666666;
-    background-color: rgba(0, 1, 1, 0.2);
-    width: 110px;
+    background-color: #f2f2f2;
+    max-width: 111px;
     
     padding: 3px 0;
     margin: 0;
@@ -1272,19 +1283,19 @@ a {
 .hotel-star {
     width: 89px;
 
-    margin-left: 22px;
+    margin-left: 21px;
 }
 
 .motel-star {
-    width: 60px;
+    width: 64px;
 
-    margin-left: 52px;
+    margin-left: 45px;
 }
 
 .apartments-star {
     width: 42px;
     
-    margin-left: 70px;
+    margin-left: 68px;
 }
 
 .footer-catalog {
