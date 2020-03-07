@@ -1,5 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 /* pt-sans-regular - latin_cyrillic */
 @font-face {
     font-family: 'PT Sans';
@@ -253,8 +251,8 @@ a {
             align-items: baseline;
     background-color: #ffffff;
 
-    margin: 0;
-    padding: 0;    
+    padding: 0; 
+    margin: 0;   
 }
 
 .city-filling li {
@@ -393,14 +391,16 @@ a {
 
 .button-search{
     width: 568px;
+    min-height: 58px;
     background-color: #766357;
-    border: none;
-    
-    padding: 30px 138px;   
+    border: none; 
 }
 
 .button-search a {
+    display: block;
     color: #ffffff; 
+
+    padding: 30px 138px;  
 }
 
 .button-search:hover {
@@ -752,12 +752,14 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+
+    padding-right: 101px;
 }
 
 .html-academy p {
@@ -813,7 +815,7 @@ a {
     display: -ms-flexbox;
     display: flex;
 
-    padding: 27px 0 5px 72px;
+    padding: 27px 0 6px 72px;
 }
 
 .checkbox-sorting ul {
@@ -832,14 +834,14 @@ a {
 
 .checkbox-label {
 	position: relative;
-	padding-left: 41px;
+    padding-left: 40px;
     cursor: pointer;
 }
 
 .checkbox-label::before {
 	content: "";
 	position: absolute;
-	top: -4px;
+	top: -2px;
 	left: 0;
 	width: 23px;
     height: 23px;
@@ -871,8 +873,7 @@ a {
 }
 
 .type-home {
-    margin: 0;
-    margin-left: 118px;
+    margin: 0 0 0 119px;
 }
 
 .price-day {
@@ -899,20 +900,25 @@ a {
     border: 2px solid #ffffff;
     border-radius: 3px;
 
-    padding: 6px 0;
-    margin: 0 0 10px;
+    padding: 6px 0 5px;
+    margin: 0 0 11px;
 }
 
 .price-number p {
+    font-size: 14px;
     font-weight: normal;
     text-align: center;
     width: 157px;
+
     margin: 0;
+    margin-left: 4px;
 }
 
 .price-number p:nth-child(2) {
     font-size: 25px;
     width: 2px;
+
+    margin: 0;
 }
 
 .infrastructure,
@@ -936,13 +942,15 @@ a {
 }
 
 .range-white {
-    width: 262px;
+    width: 264px;
     height: 2px;
     background-color:#ffffff;
+
+    margin-left: 1px;
 }
 
 .range-opacity {
-    width: 55px;
+    width: 53px;
     height: 2px;
     background-color:#ffffff;
     opacity: 0.5;
@@ -972,12 +980,13 @@ a {
 .min {
     position: absolute;
     top:0;
+    left: 1px;
 }
 
 .max {
     position: absolute;
     top: 0;
-    left: 252px;
+    left: 253px;
 }
 
 .sorting-button {
@@ -987,14 +996,14 @@ a {
     line-height: 21px;
     color: #ffffff;
     text-transform: uppercase;
-    width: 140px;
+    width: 137px;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #ffffff;
     border-radius: 3px;
 
     padding: 6px 0 5px;
-    margin: 0 auto; 
+    margin-left: 85px; 
 }
 
 .sorting-button:hover {
@@ -1061,6 +1070,7 @@ a {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;  
+
     margin-right: 7px; 
 }
 
@@ -1203,7 +1213,7 @@ a {
 }
 
 .price p {
-    margin: 0 0 5px;
+    margin: 0 0 6px;
 }
 
 .hotel-button {
