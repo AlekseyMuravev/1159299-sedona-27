@@ -444,46 +444,46 @@ a {
     -webkit-appearance: none;
     width: 346px;
     background-color: #f2f2f2;
-    border: 0;
+    border: none;
 }
 
 @-webkit-keyframes error {
-    from , 
+    from,
     to {
-        border: 1px solid #FF0000;
+        border:1px solid red
     }
     10%,
     30%,
     50%,
     70%,
     90% {
-        border: 2px solid #FF0000;
+        border:2px solid red
     }
     20%,
     40%,
     60%,
     80% {
-        border: 1px solid #FF0000;
+        border:1px solid red
     }
 }
 
 @keyframes error {
-    from , 
+    from,
     to {
-        border: 1px solid #FF0000;
+        border:1px solid red
     }
     10%,
     30%,
     50%,
     70%,
     90% {
-        border: 2px solid #FF0000;
+        border:2px solid red
     }
     20%,
     40%,
     60%,
     80% {
-        border: 1px solid #FF0000;
+        border:1px solid red
     }
 }
 
@@ -1169,26 +1169,23 @@ a {
     margin: 0;
 }
 
-.sorting-price li:nth-of-type(2)>a:hover,
-.sorting-price li:nth-of-type(3)>a:hover {
+.sorting-price a:hover{
     color:#81b3d2;
 }
 
-.sorting-price li:nth-of-type(2)>a:active,
-.sorting-price li:nth-of-type(3)>a:active {
+.sorting-price a:active {
     color: #000000;
 
     border-bottom: none;
 }
 
-.sorting-price li:first-of-type>a {
+.sorting-price .this-sorting {
     color: #81b3d2;
 
     border: none;
 }
 
-.sorting-price li:nth-of-type(2)>a,
-.sorting-price li:nth-of-type(3)>a {
+.sorting-price a {
     color: rgba(0, 0, 0, 0.3);
     
     border-bottom: 1px dotted #81b3d2;
