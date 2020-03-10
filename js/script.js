@@ -18,12 +18,15 @@ modal.classList.add("modal-none");
 
 buttonSearch.addEventListener("click", function(evt) {
     evt.preventDefault();
-    if(modal.classList.contains("modal-none")) {
-        modal.classList.remove("modal-none")
+    modal.classList.remove("modal-none");
+    if(!modal.classList.contains("modal-slide")) {
+        modal.classList.add("modal-slide");
+        modal.classList.remove("modal-slide-reverse");
+        dateIn.focus();
+    }else {
+        modal.classList.remove("modal-slide");
+        modal.classList.add("modal-slide-reverse");
     }
-    else {modal.classList.add("modal-none")
-    };
-    dateIn.focus();
 })
 
 modal.addEventListener("submit", function(evt) {
@@ -37,15 +40,6 @@ modal.addEventListener("submit", function(evt) {
         };
     }
 })
-
-// window.addEventListener("keydown", function (evt) {
-//     if (evt.keyCode === 27) {
-//       evt.preventDefault();
-//       if (modal.classList.contains("modal-none")) {
-//         modal.classList.remove("modal-none");
-//       }
-//     }
-//   });
 
 minusAdults.addEventListener("click", function(evt) {
     evt.preventDefault();

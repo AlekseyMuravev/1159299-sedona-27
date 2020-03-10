@@ -1,18 +1,25 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* pt-sans-regular - latin_cyrillic */
 @font-face {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff');
+    src: url("../fonts/pt-sans-v11-latin_cyrillic-regular.woff2") format("woff2"), /* Super Modern Browsers */
+         url("../fonts/pt-sans-v11-latin_cyrillic-regular.woff") format("woff");
 }
+
   /* pt-sans-700 - latin_cyrillic */
   @font-face {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff');
+    src: url("../fonts/pt-sans-v11-latin_cyrillic-700.woff2") format("woff2"), /* Super Modern Browsers */
+         url("../fonts/pt-sans-v11-latin_cyrillic-700.woff") format("woff");
 }
 
 html {
@@ -36,9 +43,11 @@ img {
     background-color: #f2f2f2;
     -webkit-box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
             box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
-    
+    overflow: hidden;
+
     padding: 0;
     margin: 0 auto;
+    
 }  
 
 body {
@@ -49,7 +58,7 @@ body {
     color: #333333;   
     text-transform: uppercase; 
     background-color: #f2f2f2;
-    
+        
     padding: 0;
     margin: 0;
 }
@@ -65,13 +74,13 @@ a {
 /* header */
 .logo {
     position: absolute;
+    z-index: 2;  
     top: 0;  
     left: 50%;
     width: 140px;
     height: 72px;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);  
-    z-index: 2;   
+        transform: translateX(-50%);  
 }
 
 .navigation {
@@ -123,19 +132,20 @@ a {
     margin-left: 122px;
 }
 
-.this-page {
+.navigation .this-page {
     color: #766357;
 }
 
-.this-page:hover {
+.navigation .this-page:hover {
     color:#766357;
 }
 
 /* main-главной страницы */
 .promo {
     background-color: #81b3d2;
-    background: url(../img/sedona.jpg) no-repeat;
+    background: url("../img/sedona.jpg") no-repeat;
     background-position-y: -56px;
+    width: 100%;
 
     padding-top: 508px;
 }
@@ -144,6 +154,7 @@ a {
     position: relative;
     text-align: center;
     background-color: #ffffff;
+    width: 100%;
 
     padding: 60px 350px 51px;
 }
@@ -151,13 +162,15 @@ a {
 .introduction::before {
     content: "";
     width: 1202px;
+    background-position: center;
+    background-size: 1202px;
     height: 59px;
     background: url("../img/polygon.png") no-repeat;
     position: absolute;
     top: -56px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+        transform: translateX(-50%);
 }
 
 .introduction h1 {
@@ -277,7 +290,9 @@ a {
     margin: 0;
 }
 
-.gray-box ul{
+.gray-box ul {
+    position: relative;
+    z-index: 2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -315,14 +330,16 @@ a {
 
 .map-modal iframe {
     position: absolute;
+    z-index: 1;
     top: 0;
     width: 1200px;
     height: 593px;
-    z-index: 1;
     border: none;
 }
 
 .address {
+    position: relative;
+    z-index: 3;
     text-align: center;
     background-color: #ffffff;
 
@@ -347,6 +364,7 @@ a {
 
 .map-modal {
     position: relative;
+    z-index: 1;
 }
 
 .modal {
@@ -362,23 +380,18 @@ a {
             align-items: center;
     width: 568px;
     background-color: #ffffff;
-    position: absolute;
+    position: absolute;    
+    z-index: 2;
     top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    z-index: 2;
+        transform: translateX(-50%);
     -webkit-box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
             box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2); 
 
     padding: 55px;
     margin: 0;
 }
-
-.modal-none {
-    display: none;
-}
-
 
 .button {
     font: inherit;
@@ -389,11 +402,12 @@ a {
     cursor: pointer;
 }
 
-.button-search{
-    width: 568px;
-    min-height: 58px;
+.button-search {
+    position: relative;
+    z-index: 4;
     background-color: #766357;
     border: none; 
+    max-width: 568px;
 }
 
 .button-search a {
@@ -434,8 +448,8 @@ a {
 }
 
 @-webkit-keyframes error {
-    0% , 
-    100% {
+    from , 
+    to {
         border: 1px solid #FF0000;
     }
     10%,
@@ -454,8 +468,8 @@ a {
 }
 
 @keyframes error {
-    0% , 
-    100% {
+    from , 
+    to {
         border: 1px solid #FF0000;
     }
     10%,
@@ -482,7 +496,77 @@ a {
             animation-fill-mode: forwards;
 }
 
-.modal label{ 
+@-webkit-keyframes slide {
+    from {
+        -webkit-transform: translate(-50%, -100%);
+                transform: translate(-50%, -100%);
+                visibility: hidden;
+    }
+    to {
+        -webkit-transform: translate(-50%, 0%);
+                transform: translate(-50%, 0%);
+    }
+}
+
+@keyframes slide {
+    from {
+        -webkit-transform: translate(-50%, -100%);
+                transform: translate(-50%, -100%);
+                visibility: hidden;
+    }
+    to {
+        -webkit-transform: translate(-50%, 0%);
+                transform: translate(-50%, 0%);
+    }
+} 
+@-webkit-keyframes slide-reverse {
+    from {
+        -webkit-transform: translate(-50%, 0%);
+                transform: translate(-50%, 0%);
+    }
+    to {
+        -webkit-transform: translate(-50%, -100%);
+                transform: translate(-50%, -100%);
+                visibility: hidden;
+    }
+}
+
+@keyframes slide-reverse {
+    from {
+        -webkit-transform: translate(-50%, 0%);
+                transform: translate(-50%, 0%);
+    }
+    to {
+        -webkit-transform: translate(-50%, -100%);
+                transform: translate(-50%, -100%);
+                visibility: hidden;
+    }
+} 
+
+.modal-none {
+    -webkit-transform: translate(-50%,-100%);
+            transform: translate(-50%,-100%);
+}
+
+.modal-slide {
+    -webkit-animation-name: slide;
+            animation-name: slide;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+.modal-slide-reverse {
+    -webkit-animation-name: slide-reverse;
+            animation-name: slide-reverse;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; 
+}
+
+.modal label { 
     margin-bottom: 30px;
 }
 
@@ -565,11 +649,11 @@ a {
     height: 3px;
     background-color: #a9a9a9;
     position: absolute;
+    z-index: 2;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    z-index: 2;
+        transform: translate(-50%, -50%);
 }
 
 .minus:hover::before,
@@ -591,14 +675,14 @@ a {
     height: 3px;
     background-color: #a9a9a9;
     position: absolute;
+    z-index: 2;
     top: 18px;
     left: 13px;
-    z-index: 2;
 }
 
 .plus::after {
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+        transform: rotate(90deg);
 }
 
 .persone-number {
@@ -661,8 +745,8 @@ a {
             justify-content: space-between;
     background-color:rgba(255, 255, 255, 0.9);
     position: absolute;
-    bottom: 0;
     z-index: 2;
+    bottom: 0;
     
     padding: 0;
     margin: 0;   
@@ -701,7 +785,7 @@ a {
     padding: 36px 0 30px;
 }
 
-.socials ul{
+.socials ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -792,7 +876,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background: url(../img/filter-sedona.jpg) no-repeat;         
+    background: url("../img/filter-sedona.jpg") no-repeat;         
     background-position-y: -60px;
 
     margin: 0;
@@ -845,23 +929,23 @@ a {
 	left: 0;
 	width: 23px;
     height: 23px;
-    background: url(../img/checkbox-off.svg) no-repeat;
+    background: url("../img/checkbox-off.svg") no-repeat;
 }
 
 .checkbox:checked + .checkbox-label::before {
     width: 27px;
-	background: url(../img/checkbox-on.svg) no-repeat;
+	background: url("../img/checkbox-on.svg") no-repeat;
 }
 
 .checkbox:checked:disabled + .checkbox-label::before {
-	background: url(../img/checkbox-on-disabled.svg) no-repeat;
+	background: url("../img/checkbox-on-disabled.svg") no-repeat;
 }
 
 .checkbox:disabled + .checkbox-label::before {
-    background: url(../img/checkbox-off-disabled.svg) no-repeat;   
+    background: url("../img/checkbox-off-disabled.svg") no-repeat;   
 }
 
-.checkbox:focus + .checkbox-label::before{
+.checkbox:focus + .checkbox-label::before {
     -webkit-box-shadow: 0 0 0 2px #f2f2f2;
             box-shadow: 0 0 0 2px #f2f2f2;
     border-radius: 5px;
@@ -888,7 +972,7 @@ a {
     padding: 27px 72px 5px 0;
 }
 
-.price-day>p {
+.price-day> p {
     margin-bottom: 10px;
 }
 
@@ -974,7 +1058,7 @@ a {
 
 .filter-button svg:hover {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+        transform: scale(1.2);
 }
 
 .min {
@@ -996,14 +1080,16 @@ a {
     line-height: 21px;
     color: #ffffff;
     text-transform: uppercase;
-    width: 137px;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #ffffff;
     border-radius: 3px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 134px;
 
-    padding: 6px 0 5px;
-    margin-left: 85px; 
+    padding: 6px 34px 5px;
 }
 
 .sorting-button:hover {
@@ -1075,7 +1161,7 @@ a {
 }
 
 .sorting-price p,
-.sorting a {
+.sorting-price a {
     font-size: 12px;
     line-height: 18px;
     color: #000000;
@@ -1083,26 +1169,26 @@ a {
     margin: 0;
 }
 
-.sorting li:nth-of-type(2) a:hover,
-.sorting li:nth-of-type(3) a:hover {
+.sorting-price li:nth-of-type(2)>a:hover,
+.sorting-price li:nth-of-type(3)>a:hover {
     color:#81b3d2;
 }
 
-.sorting li:nth-of-type(2) a:active,
-.sorting li:nth-of-type(3) a:active {
+.sorting-price li:nth-of-type(2)>a:active,
+.sorting-price li:nth-of-type(3)>a:active {
     color: #000000;
 
     border-bottom: none;
 }
 
-.sorting-price li:first-child a {
+.sorting-price li:first-of-type>a {
     color: #81b3d2;
 
     border: none;
 }
 
-.sorting-price li:nth-of-type(2) a,
-.sorting-price li:nth-of-type(3) a {
+.sorting-price li:nth-of-type(2)>a,
+.sorting-price li:nth-of-type(3)>a {
     color: rgba(0, 0, 0, 0.3);
     
     border-bottom: 1px dotted #81b3d2;
@@ -1133,9 +1219,6 @@ a {
     fill: #81b3d2;
 }
 
-.arrow-active {
-    fill: #81b3d2;
-}
 
 /* карточки отелей */
 .hotels ul {
@@ -1182,7 +1265,7 @@ a {
     padding: 25px 0 24px 30px;
 }
 
-.hotel-text> a{
+.hotel-text> a {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -1220,7 +1303,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 258px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1232,10 +1314,11 @@ a {
 .hotel-details {
     color: #ffffff;
     text-align: center;
-    width: 110px;
     background-color: #81b3d2;
+    max-width: 110px;
 
-    padding: 3px 0;   
+    padding: 3px 17px; 
+    margin-right: 6px;  
 }
 
 .hotel-details:hover {
@@ -1250,10 +1333,10 @@ a {
 .hotel-reservation {
     color: #ffffff;
     text-align: center;
-    width: 142px;
     background-color: #766357;
+    max-width: 142px;
 
-    padding: 3px 0;  
+    padding: 3px 16px;  
 }
 
 .hotel-reservation:hover {
@@ -1285,7 +1368,7 @@ a {
 
 .star {
     height: 17px;
-    background: url(../img/star.svg) space; 
+    background: url("../img/star.svg") space; 
 
     margin: 0 0 47px 0;    
 }
